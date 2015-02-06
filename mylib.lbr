@@ -27840,8 +27840,8 @@ Source: http://www.kingbright.com .. BA56-11EWA(Ver1189474895.pdf</description>
 <wire x1="0" y1="2.4" x2="0" y2="-2.4" width="0.1" layer="51"/>
 <wire x1="0" y1="-2.4" x2="0" y2="-2.8" width="0.2" layer="21"/>
 <wire x1="0" y1="-2.8" x2="0" y2="-3.9" width="0.1" layer="51"/>
-<text x="-6.35" y="5.08" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-6.35" y="-6.35" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-6.3" y="5" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-6.3" y="-6.3" size="1.27" layer="27" font="vector" ratio="16">&gt;VALUE</text>
 </package>
 <package name="USB-MINIB">
 <description>Surface Mount USB Mini-B Connector</description>
