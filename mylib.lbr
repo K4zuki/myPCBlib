@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -33907,6 +33907,36 @@ Source: Samtec TSW.pdf</description>
 <text x="0.7" y="-1.5" size="1.27" layer="21" ratio="16">&gt;NAME</text>
 <text x="0.2" y="7.7" size="1.27" layer="27" ratio="16">&gt;VALUE</text>
 </package>
+<package name="BOARD_MMC">
+<wire x1="45" y1="12" x2="-3" y2="12" width="0" layer="52"/>
+<wire x1="32" y1="0" x2="32" y2="1" width="0" layer="52"/>
+<wire x1="32" y1="1" x2="32" y2="23" width="0" layer="52"/>
+<wire x1="32" y1="23" x2="32" y2="24" width="0" layer="52"/>
+<wire x1="32" y1="1" x2="31" y2="0" width="0" layer="52" curve="-90"/>
+<wire x1="42" y1="1" x2="41" y2="0" width="0" layer="52" curve="-90"/>
+<wire x1="41" y1="24" x2="42" y2="23" width="0" layer="52" curve="-90"/>
+<wire x1="31" y1="24" x2="32" y2="23" width="0" layer="52" curve="-90"/>
+<wire x1="0" y1="23" x2="1" y2="24" width="0" layer="52" curve="-90"/>
+<wire x1="3.853553125" y1="0.146446875" x2="4.20710625" y2="0" width="0" layer="52" curve="45"/>
+<wire x1="0.146446875" y1="3.853553125" x2="0" y2="4.20710625" width="0" layer="52" curve="-45"/>
+<wire x1="1" y1="24" x2="31" y2="24" width="0" layer="52"/>
+<wire x1="31" y1="24" x2="41" y2="24" width="0" layer="52"/>
+<wire x1="42" y1="23" x2="42" y2="1" width="0" layer="52"/>
+<wire x1="32" y1="0" x2="41" y2="0" width="0" layer="52"/>
+<wire x1="4.20710625" y1="0" x2="31" y2="0" width="0" layer="52"/>
+<wire x1="0.146446875" y1="3.853553125" x2="3.853553125" y2="0.146446875" width="0" layer="52"/>
+<wire x1="0" y1="4.20710625" x2="0" y2="23" width="0" layer="52"/>
+<wire x1="31" y1="0" x2="32" y2="0" width="0" layer="52"/>
+<wire x1="0" y1="4.2" x2="0" y2="0" width="0" layer="52"/>
+<wire x1="0" y1="0" x2="4.2" y2="0" width="0" layer="52"/>
+<smd name="1" x="2.9" y="5.1" dx="3.3" dy="1.65" layer="1"/>
+<smd name="2" x="2.9" y="7.6" dx="3.3" dy="1.65" layer="1"/>
+<smd name="3" x="2.9" y="10.1" dx="3.3" dy="1.65" layer="1"/>
+<smd name="4" x="2.9" y="12.6" dx="3.3" dy="1.65" layer="1"/>
+<smd name="5" x="2.9" y="15.1" dx="3.3" dy="1.65" layer="1"/>
+<smd name="6" x="2.9" y="17.6" dx="3.3" dy="1.65" layer="1"/>
+<smd name="7" x="2.9" y="20.1" dx="3.3" dy="1.65" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_MIDI_YMZ294">
@@ -41278,6 +41308,16 @@ Source: Samtec TSW.pdf</description>
 <text x="-15.24" y="20.32" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-25.4" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="BOARD_MMC">
+<pin name="1" x="5.08" y="7.62" length="middle" rot="R180"/>
+<pin name="2" x="5.08" y="5.08" length="middle" rot="R180"/>
+<pin name="3" x="5.08" y="2.54" length="middle" rot="R180"/>
+<pin name="4" x="5.08" y="0" length="middle" rot="R180"/>
+<pin name="5" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="7" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<text x="0" y="10.16" size="1.6764" layer="104">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="IC_MIDI_YMZ294" prefix="IC">
@@ -48554,6 +48594,27 @@ Source: Samtec TSW.pdf</description>
 <connect gate="G$1" pin="VPP" pad="31"/>
 <connect gate="G$1" pin="XTAL32K+" pad="9"/>
 <connect gate="G$1" pin="XTAL32K-" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BOARD_MMC" prefix="U">
+<gates>
+<gate name="G$1" symbol="BOARD_MMC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BOARD_MMC">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
