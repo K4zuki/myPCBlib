@@ -33967,13 +33967,13 @@ Source: Samtec TSW.pdf</description>
 <wire x1="31" y1="0" x2="32" y2="0" width="0" layer="52"/>
 <wire x1="0" y1="4.2" x2="0" y2="0" width="0" layer="52"/>
 <wire x1="0" y1="0" x2="4.2" y2="0" width="0" layer="52"/>
-<smd name="1" x="2.9" y="5.1" dx="3.3" dy="1.65" layer="1"/>
-<smd name="2" x="2.9" y="7.6" dx="3.3" dy="1.65" layer="1"/>
-<smd name="3" x="2.9" y="10.1" dx="3.3" dy="1.65" layer="1"/>
-<smd name="4" x="2.9" y="12.6" dx="3.3" dy="1.65" layer="1"/>
-<smd name="5" x="2.9" y="15.1" dx="3.3" dy="1.65" layer="1"/>
-<smd name="6" x="2.9" y="17.6" dx="3.3" dy="1.65" layer="1"/>
-<smd name="7" x="2.9" y="20.1" dx="3.3" dy="1.65" layer="1"/>
+<smd name="1" x="2.9" y="5.1" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="2" x="2.9" y="7.6" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="3" x="2.9" y="10.1" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="4" x="2.9" y="12.6" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="5" x="2.9" y="15.1" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="6" x="2.9" y="17.6" dx="3.3" dy="1.65" layer="1" cream="no"/>
+<smd name="7" x="2.9" y="20.1" dx="3.3" dy="1.65" layer="1" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -41347,14 +41347,22 @@ Source: Samtec TSW.pdf</description>
 <text x="-15.24" y="-25.4" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="BOARD_MMC">
-<pin name="1" x="5.08" y="7.62" length="middle" rot="R180"/>
-<pin name="2" x="5.08" y="5.08" length="middle" rot="R180"/>
-<pin name="3" x="5.08" y="2.54" length="middle" rot="R180"/>
-<pin name="4" x="5.08" y="0" length="middle" rot="R180"/>
-<pin name="5" x="5.08" y="-2.54" length="middle" rot="R180"/>
-<pin name="6" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<pin name="7" x="5.08" y="-7.62" length="middle" rot="R180"/>
-<text x="0" y="10.16" size="1.6764" layer="104">&gt;NAME</text>
+<pin name="RES/CS" x="5.08" y="7.62" length="middle" rot="R180"/>
+<pin name="CMD/MOSI" x="5.08" y="5.08" length="middle" rot="R180"/>
+<pin name="GND@1" x="5.08" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="5.08" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="CLK" x="5.08" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="GND@2" x="5.08" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="DAT/MISO" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<text x="-38.1" y="-17.78" size="1.6764" layer="104">&gt;NAME</text>
+<wire x1="-38.1" y1="-12.7" x2="-35.56" y2="-15.24" width="0.254" layer="94" curve="90"/>
+<wire x1="-35.56" y1="-15.24" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-15.24" x2="0" y2="-12.7" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-35.56" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="15.24" x2="-38.1" y2="12.7" width="0.254" layer="94" curve="90"/>
+<wire x1="-38.1" y1="12.7" x2="-38.1" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 <symbol name="TR_PMOS_GDS">
 <wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.254" layer="94"/>
@@ -48683,13 +48691,13 @@ Source: Samtec TSW.pdf</description>
 <devices>
 <device name="" package="BOARD_MMC">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="5"/>
+<connect gate="G$1" pin="CMD/MOSI" pad="2"/>
+<connect gate="G$1" pin="DAT/MISO" pad="7"/>
+<connect gate="G$1" pin="GND@1" pad="3"/>
+<connect gate="G$1" pin="GND@2" pad="6"/>
+<connect gate="G$1" pin="RES/CS" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
