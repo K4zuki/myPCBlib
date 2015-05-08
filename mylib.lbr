@@ -34181,9 +34181,7 @@ Source: Samtec TSW.pdf</description>
 <text x="-0.2" y="-1.6" size="0.8" layer="21" ratio="15">R
 G
 B</text>
-<<<<<<< HEAD
 <text x="1.2" y="2.1" size="1" layer="25" ratio="20">&gt;NAME</text>
-=======
 </package>
 <package name="TSW-114-02-S-S">
 <description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
