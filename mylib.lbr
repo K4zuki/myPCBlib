@@ -33662,8 +33662,8 @@ Source: Samtec TSW.pdf</description>
 <pad name="10" x="-8.89" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="11" x="-11.43" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="12" x="-13.97" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="-15.875" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="17.145" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-15.875" y="-1.27" size="1" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="17.145" y="-1.27" size="1" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
 <rectangle x1="-14.32" y1="-0.35" x2="-13.62" y2="0.35" layer="51"/>
 <rectangle x1="-11.78" y1="-0.35" x2="-11.08" y2="0.35" layer="51"/>
 <rectangle x1="-9.24" y1="-0.35" x2="-8.54" y2="0.35" layer="51"/>
@@ -33746,8 +33746,8 @@ Source: Samtec TSW.pdf</description>
 <pad name="10" x="-8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="11" x="-11.43" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="12" x="-13.97" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="-15.875" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="17.145" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-15.8" y="-1.2" size="1" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="17.1" y="-1.2" size="1" layer="27" ratio="20" rot="R90">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="15.3" y="0.5"/>
 <vertex x="14.7" y="1.1"/>
@@ -34181,7 +34181,140 @@ Source: Samtec TSW.pdf</description>
 <text x="-0.2" y="-1.6" size="0.8" layer="21" ratio="15">R
 G
 B</text>
+<<<<<<< HEAD
 <text x="1.2" y="2.1" size="1" layer="25" ratio="20">&gt;NAME</text>
+=======
+</package>
+<package name="TSW-114-02-S-S">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+Source: Samtec TSW.pdf</description>
+<pad name="1" x="16.51" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="13.97" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="11.43" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="8.89" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="6.35" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="3.81" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="7" x="1.27" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="8" x="-1.27" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="9" x="-3.81" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="10" x="-6.35" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="11" x="-8.89" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="12" x="-11.43" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="13" x="-13.97" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="14" x="-16.51" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-18.4" y="-1.2" size="1" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="19.6" y="-1.2" size="1" layer="27" ratio="20" rot="R90">&gt;VALUE</text>
+<rectangle x1="-16.86" y1="-0.35" x2="-16.16" y2="0.35" layer="51"/>
+<rectangle x1="-14.32" y1="-0.35" x2="-13.62" y2="0.35" layer="51"/>
+<rectangle x1="-11.78" y1="-0.35" x2="-11.08" y2="0.35" layer="51"/>
+<rectangle x1="-9.24" y1="-0.35" x2="-8.54" y2="0.35" layer="51"/>
+<rectangle x1="-6.7" y1="-0.35" x2="-6" y2="0.35" layer="51"/>
+<rectangle x1="-4.16" y1="-0.35" x2="-3.46" y2="0.35" layer="51"/>
+<rectangle x1="-1.62" y1="-0.35" x2="-0.92" y2="0.35" layer="51"/>
+<rectangle x1="0.92" y1="-0.35" x2="1.62" y2="0.35" layer="51"/>
+<rectangle x1="3.46" y1="-0.35" x2="4.16" y2="0.35" layer="51"/>
+<rectangle x1="6" y1="-0.35" x2="6.7" y2="0.35" layer="51"/>
+<rectangle x1="8.54" y1="-0.35" x2="9.24" y2="0.35" layer="51"/>
+<rectangle x1="11.08" y1="-0.35" x2="11.78" y2="0.35" layer="51"/>
+<rectangle x1="13.62" y1="-0.35" x2="14.32" y2="0.35" layer="51"/>
+<rectangle x1="16.16" y1="-0.35" x2="16.86" y2="0.35" layer="51"/>
+<wire x1="-17.9" y1="1.1" x2="17.8" y2="1.1" width="0.2" layer="21"/>
+<wire x1="17.8" y1="1.1" x2="17.8" y2="-1.1" width="0.2" layer="21"/>
+<polygon width="0.2" layer="21">
+<vertex x="17.8" y="0.5"/>
+<vertex x="17.2" y="1.1"/>
+<vertex x="17.8" y="1.1"/>
+</polygon>
+<wire x1="-17.9" y1="1.1" x2="-17.9" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-17.9" y1="-1.1" x2="17.8" y2="-1.1" width="0.2" layer="21"/>
+</package>
+<package name="TSW-114-02-S-S-RA">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+Source: Samtec TSW.pdf</description>
+<wire x1="-17.909" y1="-2.046" x2="17.909" y2="-2.046" width="0.2032" layer="21"/>
+<wire x1="17.909" y1="-2.046" x2="17.909" y2="-0.106" width="0.2032" layer="21"/>
+<wire x1="17.909" y1="-0.106" x2="-17.909" y2="-0.106" width="0.2032" layer="21"/>
+<wire x1="-17.909" y1="-0.106" x2="-17.909" y2="-2.046" width="0.2032" layer="21"/>
+<pad name="1" x="16.51" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="13.97" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="11.43" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="8.89" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="6.35" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="3.81" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="7" x="1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="8" x="-1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="9" x="-3.81" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="10" x="-6.35" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="11" x="-8.89" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="12" x="-11.43" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="13" x="-13.97" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="14" x="-16.51" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-18.415" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="19.685" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="17.792" y="1.152" size="1.1" layer="21" font="vector" rot="SR0">1</text>
+<rectangle x1="-16.764" y1="0" x2="-16.256" y2="1.778" layer="51"/>
+<rectangle x1="-14.224" y1="0" x2="-13.716" y2="1.778" layer="51"/>
+<rectangle x1="-11.684" y1="0" x2="-11.176" y2="1.778" layer="51"/>
+<rectangle x1="-9.144" y1="0" x2="-8.636" y2="1.778" layer="51"/>
+<rectangle x1="-6.604" y1="0" x2="-6.096" y2="1.778" layer="51"/>
+<rectangle x1="-4.064" y1="0" x2="-3.556" y2="1.778" layer="51"/>
+<rectangle x1="-1.524" y1="0" x2="-1.016" y2="1.778" layer="51"/>
+<rectangle x1="1.016" y1="0" x2="1.524" y2="1.778" layer="51"/>
+<rectangle x1="3.556" y1="0" x2="4.064" y2="1.778" layer="51"/>
+<rectangle x1="6.096" y1="0" x2="6.604" y2="1.778" layer="51"/>
+<rectangle x1="8.636" y1="0" x2="9.144" y2="1.778" layer="51"/>
+<rectangle x1="11.176" y1="0" x2="11.684" y2="1.778" layer="51"/>
+<rectangle x1="13.716" y1="0" x2="14.224" y2="1.778" layer="51"/>
+<rectangle x1="16.256" y1="0" x2="16.764" y2="1.778" layer="51"/>
+<rectangle x1="-16.764" y1="-7.89" x2="-16.256" y2="-2.04" layer="21"/>
+<rectangle x1="-14.224" y1="-7.89" x2="-13.716" y2="-2.04" layer="21"/>
+<rectangle x1="-11.684" y1="-7.89" x2="-11.176" y2="-2.04" layer="21"/>
+<rectangle x1="-9.144" y1="-7.89" x2="-8.636" y2="-2.04" layer="21"/>
+<rectangle x1="-6.604" y1="-7.89" x2="-6.096" y2="-2.04" layer="21"/>
+<rectangle x1="-4.064" y1="-7.89" x2="-3.556" y2="-2.04" layer="21"/>
+<rectangle x1="-1.524" y1="-7.89" x2="-1.016" y2="-2.04" layer="21"/>
+<rectangle x1="1.016" y1="-7.89" x2="1.524" y2="-2.04" layer="21"/>
+<rectangle x1="3.556" y1="-7.89" x2="4.064" y2="-2.04" layer="21"/>
+<rectangle x1="6.096" y1="-7.89" x2="6.604" y2="-2.04" layer="21"/>
+<rectangle x1="8.636" y1="-7.89" x2="9.144" y2="-2.04" layer="21"/>
+<rectangle x1="11.176" y1="-7.89" x2="11.684" y2="-2.04" layer="21"/>
+<rectangle x1="13.716" y1="-7.89" x2="14.224" y2="-2.04" layer="21"/>
+<rectangle x1="16.256" y1="-7.89" x2="16.764" y2="-2.04" layer="21"/>
+</package>
+<package name="TSW-114-02-S-S-AKI">
+<pad name="1" x="16.51" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="13.97" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="11.43" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="7" x="1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="8" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="9" x="-3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="10" x="-6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="11" x="-8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="12" x="-11.43" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="13" x="-13.97" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="14" x="-16.51" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-18.4" y="-1.2" size="1" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="19.6" y="-1.2" size="1" layer="27" ratio="20" rot="R90">&gt;VALUE</text>
+<wire x1="-17.9" y1="1.1" x2="17.8" y2="1.1" width="0.2" layer="21"/>
+<wire x1="17.8" y1="1.1" x2="17.8" y2="-1.1" width="0.2" layer="21"/>
+<polygon width="0.2" layer="21">
+<vertex x="17.8" y="0.5"/>
+<vertex x="17.2" y="1.1"/>
+<vertex x="17.8" y="1.1"/>
+</polygon>
+<wire x1="-17.9" y1="1.1" x2="-17.9" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-17.9" y1="-1.1" x2="17.8" y2="-1.1" width="0.2" layer="21"/>
+</package>
+<package name="TP06RECT">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="0.4" dy="0.6" layer="1" cream="no"/>
+<text x="-0.3" y="0.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.254" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+>>>>>>> branch 'master' of https://github.com/K4zuki/myPCBlib.git
 </package>
 </packages>
 <symbols>
@@ -49033,6 +49166,90 @@ Vf@5mA:
 <connect gate="G" pin="K" pad="2"/>
 <connect gate="R" pin="A" pad="4"/>
 <connect gate="R" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSW-114-02-S-S" prefix="X">
+<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+Source: Samtec TSW.pdf</description>
+<gates>
+<gate name="-1" symbol="MPINV" x="0" y="15.24" addlevel="always"/>
+<gate name="-2" symbol="MPIN" x="0" y="12.7" addlevel="always"/>
+<gate name="-3" symbol="MPIN" x="0" y="10.16" addlevel="always"/>
+<gate name="-4" symbol="MPIN" x="0" y="7.62" addlevel="always"/>
+<gate name="-5" symbol="MPIN" x="0" y="5.08" addlevel="always"/>
+<gate name="-6" symbol="MPIN" x="0" y="2.54" addlevel="always"/>
+<gate name="-7" symbol="MPIN" x="0" y="0" addlevel="always"/>
+<gate name="-8" symbol="MPIN" x="0" y="-2.54" addlevel="always"/>
+<gate name="-9" symbol="MPIN" x="0" y="-5.08" addlevel="always"/>
+<gate name="-10" symbol="MPIN" x="0" y="-7.62" addlevel="always"/>
+<gate name="-11" symbol="MPIN" x="0" y="-10.16" addlevel="always"/>
+<gate name="-12" symbol="MPIN" x="0" y="-12.7" addlevel="always"/>
+<gate name="-13" symbol="MPIN" x="0" y="-15.24" addlevel="always"/>
+<gate name="-14" symbol="MPIN" x="0" y="-17.78" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="TSW-114-02-S-S">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-11" pin="1" pad="11"/>
+<connect gate="-12" pin="1" pad="12"/>
+<connect gate="-13" pin="1" pad="13"/>
+<connect gate="-14" pin="1" pad="14"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-RA" package="TSW-114-02-S-S-RA">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-11" pin="1" pad="11"/>
+<connect gate="-12" pin="1" pad="12"/>
+<connect gate="-13" pin="1" pad="13"/>
+<connect gate="-14" pin="1" pad="14"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPAD" prefix="TP">
+<gates>
+<gate name="1" symbol="MPIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP06RECT">
+<connects>
+<connect gate="1" pin="1" pad="TP"/>
 </connects>
 <technologies>
 <technology name=""/>
