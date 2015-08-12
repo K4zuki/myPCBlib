@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -18775,7 +18775,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <text x="6.985" y="32.385" size="1.27" layer="51" rot="SR270">CN3</text>
 <text x="6.985" y="10.795" size="1.27" layer="51" rot="SR270">CN5</text>
 </package>
-<package name="IC_08_0.65_160MIL">
+<package name="IC_08_0.65_160MIL_EP">
 <description>&lt;b&gt;Mini Small Outline Package&lt;/b&gt;</description>
 <wire x1="-1.524" y1="0.508" x2="-1.524" y2="-0.508" width="0.2" layer="21" curve="-180"/>
 <wire x1="-1.524" y1="1.27" x2="1.524" y2="1.27" width="0.2" layer="21"/>
@@ -37058,6 +37058,40 @@ Source: Samtec TSW.pdf</description>
 <wire x1="3.3" y1="1.7" x2="3.3" y2="-1.7" width="0.2" layer="21"/>
 <circle x="-3.7" y="-2.1" radius="0.3" width="0.2" layer="51"/>
 </package>
+<package name="IC_08_0.65_160MIL">
+<smd name="8" x="-0.975" y="3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="7" x="-0.325" y="3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="6" x="0.325" y="3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="5" x="0.975" y="3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="4" x="0.975" y="-3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="3" x="0.325" y="-3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="2" x="-0.325" y="-3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<smd name="1" x="-0.975" y="-3.2" dx="0.4" dy="1.2" layer="1" stop="no"/>
+<text x="-2" y="-2.5" size="1" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="2.8" y="-2.6" size="1" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
+<wire x1="-1.5" y1="2.2" x2="1.5" y2="2.2" width="0.2" layer="21"/>
+<wire x1="1.5" y1="-2.2" x2="1.5" y2="2.2" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-2.2" x2="1.5" y2="-2.2" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="-2.2" x2="-1.5" y2="2.2" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="-0.5" width="0.2" layer="21" curve="-180"/>
+<wire x1="-1.6" y1="-2.6" x2="-1.6" y2="-2.7" width="0.5" layer="51"/>
+<rectangle x1="-1.1" y1="2.3" x2="-0.8" y2="3.2" layer="51"/>
+<rectangle x1="-0.5" y1="2.3" x2="-0.2" y2="3.2" layer="51"/>
+<rectangle x1="0.2" y1="2.3" x2="0.5" y2="3.2" layer="51"/>
+<rectangle x1="0.8" y1="2.3" x2="1.1" y2="3.2" layer="51"/>
+<rectangle x1="-1.1" y1="-3.2" x2="-0.8" y2="-2.3" layer="51"/>
+<rectangle x1="-0.5" y1="-3.2" x2="-0.2" y2="-2.3" layer="51"/>
+<rectangle x1="0.2" y1="-3.2" x2="0.5" y2="-2.3" layer="51"/>
+<rectangle x1="0.8" y1="-3.2" x2="1.1" y2="-2.3" layer="51"/>
+<rectangle x1="-1.225" y1="2.55" x2="-0.725" y2="3.85" layer="29"/>
+<rectangle x1="-0.575" y1="2.55" x2="-0.075" y2="3.85" layer="29"/>
+<rectangle x1="0.075" y1="2.55" x2="0.575" y2="3.85" layer="29"/>
+<rectangle x1="0.725" y1="2.55" x2="1.225" y2="3.85" layer="29"/>
+<rectangle x1="0.725" y1="-3.85" x2="1.225" y2="-2.55" layer="29"/>
+<rectangle x1="0.075" y1="-3.85" x2="0.575" y2="-2.55" layer="29"/>
+<rectangle x1="-0.575" y1="-3.85" x2="-0.075" y2="-2.55" layer="29"/>
+<rectangle x1="-1.225" y1="-3.85" x2="-0.725" y2="-2.55" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_MIDI_YMZ294">
@@ -49751,7 +49785,7 @@ w/ Configurable Voltage Translation and 3-State Outputs
 <gate name="G" symbol="IC_TTL_74245_DUAL" x="-5.08" y="0"/>
 </gates>
 <devices>
-<device name="_FLAT" package="IC_08_0.65_160MIL">
+<device name="_FLAT" package="IC_08_0.65_160MIL_EP">
 <connects>
 <connect gate="G" pin="A1" pad="3"/>
 <connect gate="G" pin="A2" pad="5"/>
@@ -49851,7 +49885,7 @@ w/ 3-State Output</description>
 <gate name="G$1" symbol="IC_TTL_74125_DUAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_FLAT" package="IC_08_0.65_160MIL">
+<device name="_FLAT" package="IC_08_0.65_160MIL_EP">
 <connects>
 <connect gate="G$1" pin="!OE1!" pad="1"/>
 <connect gate="G$1" pin="!OE2!" pad="7"/>
@@ -49894,7 +49928,7 @@ w/ 3-State Output</description>
 <gate name="G$1" symbol="IC_TTL_7432_DUAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_FLAT" package="IC_08_0.65_160MIL">
+<device name="_FLAT" package="IC_08_0.65_160MIL_EP">
 <connects>
 <connect gate="G$1" pin="A1" pad="1"/>
 <connect gate="G$1" pin="A2" pad="5"/>
@@ -50989,7 +51023,7 @@ w/ 3-State Output</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="_FLAT" package="IC_08_0.65_160MIL">
+<device name="_FLAT" package="IC_08_0.65_160MIL_EP">
 <connects>
 <connect gate="G$1" pin="1!Y0!" pad="7"/>
 <connect gate="G$1" pin="1!Y1!" pad="6"/>
@@ -51747,7 +51781,7 @@ w/ 3-State Output</description>
 <gate name="G$1" symbol="IC_LDO_MIC5355" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IC_08_0.65_160MIL">
+<device name="" package="IC_08_0.65_160MIL_EP">
 <connects>
 <connect gate="G$1" pin="EN1" pad="5"/>
 <connect gate="G$1" pin="EN2" pad="4"/>
@@ -51875,7 +51909,22 @@ Source: Samtec TSW.pdf</description>
 <gate name="G$1" symbol="IC_SRAM_23K256" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IC_08_1.27_150MIL">
+<device name="SN" package="IC_08_1.27_150MIL">
+<connects>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!HOLD" pad="7"/>
+<connect gate="G$1" pin="!WP" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SI" pad="5"/>
+<connect gate="G$1" pin="SO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ST" package="IC_08_0.65_160MIL">
 <connects>
 <connect gate="G$1" pin="!CS" pad="1"/>
 <connect gate="G$1" pin="!HOLD" pad="7"/>
