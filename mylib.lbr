@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -44343,7 +44343,7 @@ Source: Samtec TSW.pdf</description>
 <pin name="OUT" x="12.7" y="5.08" length="short" direction="pas" rot="R180"/>
 <pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
 </symbol>
-<symbol name="IF-LPC11U35">
+<symbol name="IC_LPC11U35_IF">
 <wire x1="-17.78" y1="-58.42" x2="17.78" y2="-58.42" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-58.42" x2="17.78" y2="2.54" width="0.254" layer="94"/>
 <wire x1="17.78" y1="2.54" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
@@ -44700,6 +44700,48 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="IC_LPC11U3XQFN33">
+<wire x1="-17.78" y1="-63.5" x2="17.78" y2="-63.5" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-63.5" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="2.54" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="2.54" x2="-17.78" y2="-63.5" width="0.254" layer="94"/>
+<pin name="!RESET!" x="-22.86" y="-5.08" length="middle"/>
+<pin name="ISP" x="-22.86" y="-12.7" length="middle"/>
+<pin name="BL" x="-22.86" y="-10.16" length="middle"/>
+<pin name="P0_20" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0_19/TXD-&gt;" x="22.86" y="-60.96" length="middle" rot="R180"/>
+<pin name="P0_18/RXD&lt;-" x="22.86" y="-58.42" length="middle" rot="R180"/>
+<pin name="P0_17/!RTS!" x="22.86" y="-55.88" length="middle" rot="R180"/>
+<pin name="P1_15" x="22.86" y="-53.34" length="middle" rot="R180"/>
+<pin name="P0_32/AD7" x="22.86" y="-50.8" length="middle" rot="R180"/>
+<pin name="P0_16/AD5" x="22.86" y="-48.26" length="middle" rot="R180"/>
+<pin name="P0_15/SWDIO/AD4" x="22.86" y="-45.72" length="middle" rot="R180"/>
+<pin name="P0_14/AD3" x="22.86" y="-43.18" length="middle" rot="R180"/>
+<pin name="P0_13/AD2" x="22.86" y="-40.64" length="middle" rot="R180"/>
+<pin name="P0_12/AD1" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="P0_22/MISO1" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="P0_11/AD0" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="P0_7/CTS" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="P0_21/MOSI1" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="P0_10/SCK0/SWCLK" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="P0_2/SSEL0" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="P0_4/SCL" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="P0_5/SDA" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="P0_9/MOSI0" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="USB_D+" x="-22.86" y="-17.78" length="middle"/>
+<pin name="USB_D-" x="-22.86" y="-20.32" length="middle"/>
+<pin name="USB_SCON" x="-22.86" y="-25.4" length="middle"/>
+<pin name="USB_VBUS" x="-22.86" y="-22.86" length="middle"/>
+<pin name="VDD1" x="-22.86" y="-30.48" length="middle"/>
+<pin name="VDD2" x="-22.86" y="-33.02" length="middle"/>
+<pin name="VSS" x="-22.86" y="-40.64" length="middle"/>
+<pin name="P0_8/MISO0" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="XTALIN" x="-22.86" y="-45.72" length="middle"/>
+<pin name="XTALOUT" x="-22.86" y="-48.26" length="middle"/>
+<text x="-17.78" y="3.81" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="17.78" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<text x="-13.97" y="-1.27" size="1.778" layer="94" font="vector">LPC11U35FHI33/501</text>
 </symbol>
 <symbol name="IC_DCDC_LM27313">
 <pin name="LX" x="12.7" y="5.08" length="middle" rot="R180"/>
@@ -51761,12 +51803,12 @@ w/ 3-State Output</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IF-LPC11U35" prefix="IC" uservalue="yes">
+<deviceset name="IC_LPC11U35IF" prefix="IC" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="IF-LPC11U35" x="0" y="2.54"/>
+<gate name="G$1" symbol="IC_LPC11U35_IF" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="HVQFN33">
+<device name="&quot;&quot;" package="HVQFN33">
 <connects>
 <connect gate="G$1" pin="IF_NRESET" pad="2"/>
 <connect gate="G$1" pin="LED_HID" pad="12"/>
@@ -52378,6 +52420,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
+<<<<<<< HEAD
 <deviceset name="IC_DCDC_LM27313" prefix="IC">
 <gates>
 <gate name="G$1" symbol="IC_DCDC_LM27313" x="0" y="0"/>
@@ -52415,6 +52458,48 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+=======
+<deviceset name="IC_LPC11U3XQFN33" prefix="IC">
+<gates>
+<gate name="G$1" symbol="IC_LPC11U3XQFN33" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HVQFN33">
+<connects>
+<connect gate="G$1" pin="!RESET!" pad="2"/>
+<connect gate="G$1" pin="BL" pad="1"/>
+<connect gate="G$1" pin="ISP" pad="3"/>
+<connect gate="G$1" pin="P0_10/SCK0/SWCLK" pad="19"/>
+<connect gate="G$1" pin="P0_11/AD0" pad="21"/>
+<connect gate="G$1" pin="P0_12/AD1" pad="22"/>
+<connect gate="G$1" pin="P0_13/AD2" pad="23"/>
+<connect gate="G$1" pin="P0_14/AD3" pad="24"/>
+<connect gate="G$1" pin="P0_15/SWDIO/AD4" pad="25"/>
+<connect gate="G$1" pin="P0_16/AD5" pad="26"/>
+<connect gate="G$1" pin="P0_17/!RTS!" pad="30"/>
+<connect gate="G$1" pin="P0_18/RXD&lt;-" pad="31"/>
+<connect gate="G$1" pin="P0_19/TXD-&gt;" pad="32"/>
+<connect gate="G$1" pin="P0_2/SSEL0" pad="8"/>
+<connect gate="G$1" pin="P0_20" pad="7"/>
+<connect gate="G$1" pin="P0_21/MOSI1" pad="12"/>
+<connect gate="G$1" pin="P0_22/MISO1" pad="20"/>
+<connect gate="G$1" pin="P0_32/AD7" pad="27"/>
+<connect gate="G$1" pin="P0_4/SCL" pad="10"/>
+<connect gate="G$1" pin="P0_5/SDA" pad="11"/>
+<connect gate="G$1" pin="P0_7/CTS" pad="16"/>
+<connect gate="G$1" pin="P0_8/MISO0" pad="17"/>
+<connect gate="G$1" pin="P0_9/MOSI0" pad="18"/>
+<connect gate="G$1" pin="P1_15" pad="28"/>
+<connect gate="G$1" pin="USB_D+" pad="14"/>
+<connect gate="G$1" pin="USB_D-" pad="13"/>
+<connect gate="G$1" pin="USB_SCON" pad="15"/>
+<connect gate="G$1" pin="USB_VBUS" pad="9"/>
+<connect gate="G$1" pin="VDD1" pad="6"/>
+<connect gate="G$1" pin="VDD2" pad="29"/>
+<connect gate="G$1" pin="VSS" pad="EXP"/>
+<connect gate="G$1" pin="XTALIN" pad="4"/>
+<connect gate="G$1" pin="XTALOUT" pad="5"/>
+>>>>>>> refs/remotes/origin/master
 </connects>
 <technologies>
 <technology name=""/>
