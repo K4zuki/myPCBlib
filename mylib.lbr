@@ -52420,7 +52420,6 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="IC_DCDC_LM27313" prefix="IC">
 <gates>
 <gate name="G$1" symbol="IC_DCDC_LM27313" x="0" y="0"/>
@@ -52458,7 +52457,14 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-=======
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+
 <deviceset name="IC_LPC11U3XQFN33" prefix="IC">
 <gates>
 <gate name="G$1" symbol="IC_LPC11U3XQFN33" x="0" y="0"/>
@@ -52499,7 +52505,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <connect gate="G$1" pin="VSS" pad="EXP"/>
 <connect gate="G$1" pin="XTALIN" pad="4"/>
 <connect gate="G$1" pin="XTALOUT" pad="5"/>
->>>>>>> refs/remotes/origin/master
+
 </connects>
 <technologies>
 <technology name=""/>
