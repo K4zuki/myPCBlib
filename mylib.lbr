@@ -34621,10 +34621,14 @@ Source: Samtec TSW.pdf</description>
 <package name="TP06RECT">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
 <smd name="TP" x="0" y="0" dx="0.4" dy="0.6" layer="1" stop="no" cream="no"/>
-<text x="-0.3" y="0.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.3" y="0.9" size="1.2" layer="25" ratio="17">&gt;NAME</text>
 <text x="-0.254" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.25" y1="-0.35" x2="0.25" y2="0.35" layer="29"/>
+<wire x1="-0.4" y1="0.5" x2="0.4" y2="0.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="0.5" x2="0.4" y2="-0.5" width="0.2" layer="21"/>
+<wire x1="0.4" y1="-0.5" x2="-0.4" y2="-0.5" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-0.5" x2="-0.4" y2="0.5" width="0.2" layer="21"/>
 </package>
 <package name="ANT_IFA_V2">
 <rectangle x1="-6.71" y1="2.03" x2="-3.57" y2="2.66" layer="41"/>
