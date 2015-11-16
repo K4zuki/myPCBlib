@@ -43,7 +43,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="9" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="9" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1887,8 +1887,8 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
 <wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
 <circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.1" dx="1.2" dy="1.2" layer="1"/>
-<smd name="A" x="0" y="-1.1" dx="1.2" dy="1.2" layer="1"/>
+<smd name="C" x="0" y="1.1" dx="1.2" dy="1.2" layer="1" cream="no"/>
+<smd name="A" x="0" y="-1.1" dx="1.2" dy="1.2" layer="1" cream="no"/>
 <text x="-1.2" y="-1.2" size="1.2" layer="25" ratio="17" rot="R90">&gt;NAME</text>
 <text x="2.5" y="-1.2" size="1.2" layer="27" ratio="17" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
@@ -1904,6 +1904,16 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
 <circle x="0" y="2.3" radius="0.1" width="0.4" layer="21"/>
 <rectangle x1="-0.2" y1="2.1" x2="0.2" y2="2.5" layer="21"/>
+<rectangle x1="-0.4" y1="0.7" x2="0.4" y2="1.5" layer="31"/>
+<wire x1="-0.4" y1="1.5" x2="0.4" y2="1.5" width="0.4" layer="31"/>
+<wire x1="0.4" y1="1.5" x2="0.4" y2="0.7" width="0.4" layer="31"/>
+<wire x1="0.4" y1="0.7" x2="-0.4" y2="0.7" width="0.4" layer="31"/>
+<wire x1="-0.4" y1="0.7" x2="-0.4" y2="1.5" width="0.4" layer="31"/>
+<rectangle x1="-0.4" y1="-1.5" x2="0.4" y2="-0.7" layer="31"/>
+<wire x1="-0.4" y1="-0.7" x2="0.4" y2="-0.7" width="0.4" layer="31"/>
+<wire x1="0.4" y1="-0.7" x2="0.4" y2="-1.5" width="0.4" layer="31"/>
+<wire x1="0.4" y1="-1.5" x2="-0.4" y2="-1.5" width="0.4" layer="31"/>
+<wire x1="-0.4" y1="-1.5" x2="-0.4" y2="-0.7" width="0.4" layer="31"/>
 </package>
 <package name="CHIPLED_1206">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
