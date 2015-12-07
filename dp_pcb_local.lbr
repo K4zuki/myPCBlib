@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2338,7 +2338,9 @@
 </device>
 <device name="-43X70" package="DP7043_V1">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-31X50" package="DP5031_V1">
