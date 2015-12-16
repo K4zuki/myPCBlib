@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -38249,6 +38249,8 @@ Source: Samtec TSW.pdf</description>
 <rectangle x1="-0.45" y1="-2.75" x2="0.45" y2="-1.05" layer="29"/>
 <rectangle x1="-1.85" y1="-2.75" x2="-1.15" y2="-1.05" layer="29"/>
 <rectangle x1="1.15" y1="-2.75" x2="1.85" y2="-1.05" layer="29"/>
+<wire x1="-1.1" y1="1.2" x2="1.1" y2="1.2" width="0.2" layer="51"/>
+<wire x1="2" y1="-1.2" x2="-2" y2="-1.2" width="0.2" layer="51"/>
 </package>
 <package name="TP_1608">
 <smd name="TP" x="0" y="0" dx="1.8" dy="1" layer="1" stop="no" cream="no"/>
@@ -53868,7 +53870,7 @@ Source: Samtec TSW.pdf</description>
 </technology>
 <technology name="32.768K">
 <attribute name="AKIZUKI" value="" constant="no"/>
-<attribute name="DIGIKEY" value="728-1076-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="1253-1342-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
 </technologies>
