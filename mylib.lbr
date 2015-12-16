@@ -54090,7 +54090,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<deviceset name="LDO4_*" prefix="IC">
+<deviceset name="LDO4_*" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="IC_LDO_XX1117_4" x="0" y="0"/>
 </gates>
