@@ -1889,8 +1889,8 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
 <smd name="C" x="0" y="1.1" dx="1.2" dy="1.2" layer="1" cream="no"/>
 <smd name="A" x="0" y="-1.1" dx="1.2" dy="1.2" layer="1" cream="no"/>
-<text x="-1.2" y="-1.2" size="1.2" layer="25" ratio="17" rot="R90">&gt;NAME</text>
-<text x="2.5" y="-1.2" size="1.2" layer="27" ratio="17" rot="R90">&gt;VALUE</text>
+<text x="0" y="0" size="1.2" layer="25" ratio="17" rot="R90" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.2" layer="27" rot="R90" align="center">&gt;VALUE</text>
 <rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
 <rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
 <rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
@@ -7870,21 +7870,27 @@ Source: www.kingbright.com</description>
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
 </technology>
 <technology name="BL">
 <attribute name="AKIZUKI" value="I-06424" constant="no"/>
+<attribute name="DIGIKEY" value="160-1643-1-ND" constant="no"/>
 </technology>
 <technology name="GR">
 <attribute name="AKIZUKI" value="I-06423" constant="no"/>
+<attribute name="DIGIKEY" value="160-1169-1-ND" constant="no"/>
 </technology>
 <technology name="RD">
 <attribute name="AKIZUKI" value="I-06419" constant="no"/>
+<attribute name="DIGIKEY" value="160-1168-1-ND" constant="no"/>
 </technology>
 <technology name="WH">
 <attribute name="AKIZUKI" value="I-06425" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
 </technology>
 <technology name="YL">
 <attribute name="AKIZUKI" value="I-06420" constant="no"/>
+<attribute name="DIGIKEY" value="160-1170-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
