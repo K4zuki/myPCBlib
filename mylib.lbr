@@ -37364,8 +37364,8 @@ Source: Samtec TSW.pdf</description>
 <smd name="5" x="1.3" y="4.15" dx="0.4" dy="1.4" layer="1" stop="no" cream="no"/>
 <wire x1="3.8" y1="0" x2="-3.8" y2="0" width="0.1" layer="51"/>
 <wire x1="-3.8" y1="0" x2="-4.7" y2="0" width="0.1" layer="48"/>
-<pad name="SHD" x="-2.2" y="4.45" drill="0.6" diameter="0.95" shape="long" rot="R90"/>
-<pad name="SHD$1" x="2.2" y="4.45" drill="0.6" diameter="0.95" shape="long" rot="R90"/>
+<pad name="SHD" x="-2.2" y="4.45" drill="0.6" diameter="1" shape="long" rot="R90"/>
+<pad name="SHD$1" x="2.2" y="4.45" drill="0.6" diameter="1" shape="long" rot="R90"/>
 <wire x1="-4" y1="-0.7" x2="4" y2="-0.7" width="0.1" layer="51"/>
 <wire x1="-4" y1="-0.7" x2="-3.8" y2="0" width="0.1" layer="51"/>
 <wire x1="4" y1="-0.7" x2="3.8" y2="0" width="0.1" layer="51"/>
@@ -54310,8 +54310,16 @@ Source: Samtec TSW.pdf</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="579-23K256-I/SN" constant="no"/>
 </technology>
+<technology name="AT25DN512C">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="988-A25DN512CSSHFGPT (cuttape)" constant="no"/>
+</technology>
 <technology name="AT25XE011">
 <attribute name="DIGIKEY" value="1265-1137-1-ND" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="AT25XE512C">
+<attribute name="DIGIKEY" value="1265-1134-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
 </technologies>
@@ -54332,9 +54340,17 @@ Source: Samtec TSW.pdf</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
+<technology name="AT25DN512C">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="988-A25DN512CXMHFGPB (tube)" constant="no"/>
+</technology>
 <technology name="AT25XE011">
 <attribute name="DIGIKEY" value="1265-1184-5-ND" constant="no"/>
 <attribute name="MOUSER" value="!non-stock! 988-AT25XE011-SSHN-B" constant="no"/>
+</technology>
+<technology name="AT25XE512C">
+<attribute name="DIGIKEY" value="1265-1136-1-ND" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
