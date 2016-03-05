@@ -7871,26 +7871,32 @@ Source: www.kingbright.com</description>
 <technology name="">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="BL">
 <attribute name="AKIZUKI" value="I-06424" constant="no"/>
 <attribute name="DIGIKEY" value="160-1643-1-ND" constant="no"/>
+<attribute name="SEEED" value="304090061" constant="no"/>
 </technology>
 <technology name="GR">
 <attribute name="AKIZUKI" value="I-06423" constant="no"/>
 <attribute name="DIGIKEY" value="160-1169-1-ND" constant="no"/>
+<attribute name="SEEED" value="304090057" constant="no"/>
 </technology>
 <technology name="RD">
 <attribute name="AKIZUKI" value="I-06419" constant="no"/>
 <attribute name="DIGIKEY" value="160-1168-1-ND" constant="no"/>
+<attribute name="SEEED" value="304090046" constant="no"/>
 </technology>
 <technology name="WH">
 <attribute name="AKIZUKI" value="I-06425" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="YL">
 <attribute name="AKIZUKI" value="I-06420" constant="no"/>
 <attribute name="DIGIKEY" value="160-1170-1-ND" constant="no"/>
+<attribute name="SEEED" value="304090039" constant="no"/>
 </technology>
 </technologies>
 </device>
