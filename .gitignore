@@ -1,4 +1,4 @@
 /.project
 *.l#?
 /mylib.lbr~
-*.lck
+.*.lck
