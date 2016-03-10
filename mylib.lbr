@@ -46,11 +46,11 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="0" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -38751,6 +38751,15 @@ Source: Samtec TSW.pdf</description>
 <wire x1="0" y1="-0.5" x2="0.1" y2="-0.5" width="0.2" layer="21"/>
 <smd name="2" x="0" y="0" dx="0.8" dy="0.3" layer="1" cream="no"/>
 </package>
+<package name="PCB_CORNER_NH">
+<wire x1="5" y1="0" x2="0" y2="-5" width="2" layer="46" curve="-90"/>
+<wire x1="-5.1" y1="-5" x2="0" y2="-5" width="2" layer="46"/>
+<wire x1="5" y1="0" x2="5" y2="5.1" width="2" layer="46"/>
+<wire x1="-6.1" y1="-4" x2="0" y2="-4" width="0" layer="20"/>
+<wire x1="0" y1="-4" x2="4" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="4" y1="0" x2="4" y2="6.1" width="0" layer="20"/>
+<circle x="0" y="0" radius="1.6" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_MIDI_YMZ294">
@@ -55453,6 +55462,11 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technology name="">
 <attribute name="NOT_COMPONENT" value="YES" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="_NH" package="PCB_CORNER_NH">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
