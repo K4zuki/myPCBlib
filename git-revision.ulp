@@ -1,0 +1,66 @@
+/** git-revision.ulp
+original idea from http://maaash.jp/2013/04/eagle-git-commit-hash-ulp/
+https://github.com/mash , https://twitter.com/maaash
+
+modifications to popup directory selector by K4zuki(https://github.com/K4zuki)
+*/
+
+
+string cmd, s, version;
+int count = 0;
+string git_dir       = dlgDirectory("specify .git directory");
+string stdout        = "debug.log";
+string revision_file = "git-revision.log";
+string errorMsg;
+
+string GitRevision () {
+    if ( version ) {
+        return version;
+    }
+
+
+    string git_cmd = "git --git-dir=";
+    git_cmd        += git_dir;
+    git_cmd        += " rev-parse --short HEAD > ";
+    git_cmd        += revision_file;
+
+    int result = system( git_cmd );
+    if ( result ) {
+        dlgMessageBox( "git rev-parse failed" );
+        exit( -1 );
+    }
+    fileread( version, revision_file );
+
+    return version;
+}
+
+if ( ! git_dir ) {
+    dlgMessageBox( "provide .git directory as an argument", "OK" );
+    exit( -1 );
+}
+
+output( stdout, "wt" ) {
+    dlgMessageBox( "output( stdout, \"wt\" ) ", "OK" );
+    if (schematic) {
+        dlgMessageBox( "if (schematic) {", "OK" );
+        schematic(S) {
+            dlgMessageBox( "schematic(S) {", "OK" );
+            S.parts( P) {
+                if ( P.device && P.device.name && ! strstr(P.device.name, "GIT-REVISION") ) {
+                    dlgMessageBox(  P.device.name, "OK" );
+                    sprintf( s, "VALUE %s %s\n", P.name, GitRevision() );
+                    cmd += s;
+                    count ++;
+                }
+            }
+        }
+    }
+}
+
+if ( ! count ) {
+    sprintf(errorMsg,"%d: device named \"GIT-REVISION\" not found",count);
+//    dlgMessageBox( "%d: device named \"GIT-REVISION\" not found", "OK" );
+    dlgMessageBox( errorMsg, "OK" );
+    exit( -1 );
+}
+exit( cmd );
