@@ -34147,7 +34147,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <rectangle x1="0.45" y1="-0.15" x2="0.75" y2="0.15" layer="31"/>
 </package>
 <package name="TSW-112-02-S-S">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-15.369" y1="1.155" x2="15.369" y2="1.155" width="0.2" layer="21"/>
 <wire x1="15.369" y1="1.155" x2="15.369" y2="-1.155" width="0.2" layer="21"/>
@@ -34186,7 +34186,7 @@ Source: Samtec TSW.pdf</description>
 </polygon>
 </package>
 <package name="TSW-112-02-S-S-RA">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-15.369" y1="-2.046" x2="15.369" y2="-2.046" width="0.2032" layer="21"/>
 <wire x1="15.369" y1="-2.046" x2="15.369" y2="-0.106" width="0.2032" layer="21"/>
@@ -34798,7 +34798,7 @@ B</text>
 <rectangle x1="-2.45" y1="1.2" x2="-1.35" y2="1.6" layer="31"/>
 </package>
 <package name="TSW-114-07-F-S">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <pad name="1" x="16.51" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="2" x="13.97" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
@@ -34841,7 +34841,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-17.9" y1="-1.1" x2="17.8" y2="-1.1" width="0.2" layer="21"/>
 </package>
 <package name="TSW-114-08-F-S-RA">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-17.909" y1="-2.046" x2="17.909" y2="-2.046" width="0.2032" layer="21"/>
 <wire x1="17.909" y1="-2.046" x2="17.909" y2="-0.106" width="0.2032" layer="21"/>
@@ -54219,7 +54219,7 @@ w/ 3-State Output</description>
 </devices>
 </deviceset>
 <deviceset name="TSW-112-02-S-S" prefix="X">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <gates>
 <gate name="-1" symbol="MPINV" x="-1.27" y="12.7" addlevel="always"/>
@@ -54588,7 +54588,7 @@ Source: Samtec TSW.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="TSW-114-02-S-S" prefix="X">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <gates>
 <gate name="-1" symbol="MPINV" x="0" y="15.24" addlevel="always"/>
