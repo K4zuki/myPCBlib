@@ -46391,7 +46391,7 @@ Source: Samtec TSW.pdf</description>
 <pin name="P0_18/RXD&lt;-" x="22.86" y="-58.42" length="middle" rot="R180"/>
 <pin name="P0_17/!RTS!" x="22.86" y="-55.88" length="middle" rot="R180"/>
 <pin name="P1_15" x="22.86" y="-53.34" length="middle" rot="R180"/>
-<pin name="P0_32/AD7" x="22.86" y="-50.8" length="middle" rot="R180"/>
+<pin name="P0_23/AD7" x="22.86" y="-50.8" length="middle" rot="R180"/>
 <pin name="P0_16/AD5" x="22.86" y="-48.26" length="middle" rot="R180"/>
 <pin name="P0_15/SWDIO/AD4" x="22.86" y="-45.72" length="middle" rot="R180"/>
 <pin name="P0_14/AD3" x="22.86" y="-43.18" length="middle" rot="R180"/>
@@ -55181,7 +55181,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <connect gate="G$1" pin="P0_20" pad="7"/>
 <connect gate="G$1" pin="P0_21/MOSI1" pad="12"/>
 <connect gate="G$1" pin="P0_22/MISO1" pad="20"/>
-<connect gate="G$1" pin="P0_32/AD7" pad="27"/>
+<connect gate="G$1" pin="P0_23/AD7" pad="27"/>
 <connect gate="G$1" pin="P0_4/SCL" pad="10"/>
 <connect gate="G$1" pin="P0_5/SDA" pad="11"/>
 <connect gate="G$1" pin="P0_7/CTS" pad="16"/>
