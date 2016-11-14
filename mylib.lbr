@@ -54045,7 +54045,10 @@ w/ 3-State Output</description>
 <connect gate="G$1" pin="SCK" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="HFJ110CT-ND" constant="no"/>
+<attribute name="MOUSER" value="798-FH12-10S-0.5SH55" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -54969,7 +54972,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </technology>
 </technologies>
 </device>
-<device name="_SC82−AB" package="SOT130P220X135-4N">
+<device name="_SC82-AB" package="SOT130P220X135-4N">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2"/>
