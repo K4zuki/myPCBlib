@@ -55719,22 +55719,22 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<deviceset name="PHA-1X14SG">
+<deviceset name="PHA-1X14SG" prefix="X">
 <gates>
-<gate name="-2" symbol="MPIN" x="2.54" y="12.7"/>
-<gate name="-3" symbol="MPIN" x="2.54" y="10.16"/>
-<gate name="-4" symbol="MPIN" x="2.54" y="7.62"/>
-<gate name="-5" symbol="MPIN" x="2.54" y="5.08"/>
-<gate name="-6" symbol="MPIN" x="2.54" y="2.54"/>
-<gate name="-7" symbol="MPIN" x="2.54" y="0"/>
-<gate name="-8" symbol="MPIN" x="2.54" y="-2.54"/>
-<gate name="-9" symbol="MPIN" x="2.54" y="-5.08"/>
-<gate name="-10" symbol="MPIN" x="2.54" y="-7.62"/>
-<gate name="-11" symbol="MPIN" x="2.54" y="-10.16"/>
-<gate name="-12" symbol="MPIN" x="2.54" y="-12.7"/>
-<gate name="-13" symbol="MPIN" x="2.54" y="-15.24"/>
-<gate name="-14" symbol="MPIN" x="2.54" y="-17.78"/>
-<gate name="-1" symbol="MPINV" x="2.54" y="15.24"/>
+<gate name="-2" symbol="MPIN" x="2.54" y="12.7" addlevel="always"/>
+<gate name="-3" symbol="MPIN" x="2.54" y="10.16" addlevel="always"/>
+<gate name="-4" symbol="MPIN" x="2.54" y="7.62" addlevel="always"/>
+<gate name="-5" symbol="MPIN" x="2.54" y="5.08" addlevel="always"/>
+<gate name="-6" symbol="MPIN" x="2.54" y="2.54" addlevel="always"/>
+<gate name="-7" symbol="MPIN" x="2.54" y="0" addlevel="always"/>
+<gate name="-8" symbol="MPIN" x="2.54" y="-2.54" addlevel="always"/>
+<gate name="-9" symbol="MPIN" x="2.54" y="-5.08" addlevel="always"/>
+<gate name="-10" symbol="MPIN" x="2.54" y="-7.62" addlevel="always"/>
+<gate name="-11" symbol="MPIN" x="2.54" y="-10.16" addlevel="always"/>
+<gate name="-12" symbol="MPIN" x="2.54" y="-12.7" addlevel="always"/>
+<gate name="-13" symbol="MPIN" x="2.54" y="-15.24" addlevel="always"/>
+<gate name="-14" symbol="MPIN" x="2.54" y="-17.78" addlevel="always"/>
+<gate name="-1" symbol="MPINV" x="2.54" y="15.24" addlevel="always"/>
 </gates>
 <devices>
 <device name="ST" package="PHA-1X14SG">
@@ -55762,16 +55762,16 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<deviceset name="PHA-1X08*G">
+<deviceset name="PHA-1X08*G" prefix="X">
 <gates>
-<gate name="-1" symbol="MPINV" x="2.54" y="7.62"/>
-<gate name="-2" symbol="MPIN" x="2.54" y="5.08"/>
-<gate name="-3" symbol="MPIN" x="2.54" y="2.54"/>
-<gate name="-4" symbol="MPIN" x="2.54" y="0"/>
-<gate name="-5" symbol="MPIN" x="2.54" y="-2.54"/>
-<gate name="-6" symbol="MPIN" x="2.54" y="-5.08"/>
-<gate name="-7" symbol="MPIN" x="2.54" y="-7.62"/>
-<gate name="-8" symbol="MPIN" x="2.54" y="-10.16"/>
+<gate name="-1" symbol="MPINV" x="2.54" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="MPIN" x="2.54" y="5.08" addlevel="always"/>
+<gate name="-3" symbol="MPIN" x="2.54" y="2.54" addlevel="always"/>
+<gate name="-4" symbol="MPIN" x="2.54" y="0" addlevel="always"/>
+<gate name="-5" symbol="MPIN" x="2.54" y="-2.54" addlevel="always"/>
+<gate name="-6" symbol="MPIN" x="2.54" y="-5.08" addlevel="always"/>
+<gate name="-7" symbol="MPIN" x="2.54" y="-7.62" addlevel="always"/>
+<gate name="-8" symbol="MPIN" x="2.54" y="-10.16" addlevel="always"/>
 </gates>
 <devices>
 <device name="_R" package="PHA-1X08RG">
