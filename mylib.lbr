@@ -38850,6 +38850,49 @@ Source: Samtec TSW.pdf</description>
 <wire x1="2.4" y1="-1.2" x2="-3.1" y2="-1.2" width="0.2" layer="21"/>
 <wire x1="-3.1" y1="-1.2" x2="-3.1" y2="1.2" width="0.2" layer="21"/>
 </package>
+<package name="PHA-1X08SG">
+<pad name="1" x="8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="-3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="7" x="-6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="8" x="-8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-10.4" y="-1.2" size="1" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="11.4" y="-1.2" size="1" layer="27" ratio="20" rot="R90">&gt;VALUE</text>
+<wire x1="-10.2" y1="1.1" x2="10.2" y2="1.1" width="0.2" layer="21"/>
+<wire x1="10.2" y1="1.1" x2="10.2" y2="-1.1" width="0.2" layer="21"/>
+<polygon width="0.2" layer="21">
+<vertex x="10.18" y="0.5"/>
+<vertex x="9.58" y="1.1"/>
+<vertex x="10.18" y="1.1"/>
+</polygon>
+<wire x1="-10.2" y1="1.1" x2="-10.2" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-10.2" y1="-1.1" x2="10.2" y2="-1.1" width="0.2" layer="21"/>
+</package>
+<package name="PHA-1X08RG">
+<pad name="1" x="8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="2" x="6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="3" x="3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="4" x="1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="5" x="-1.27" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="6" x="-3.81" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="7" x="-6.35" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<pad name="8" x="-8.89" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
+<text x="-10.4" y="-1.2" size="1" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="11.4" y="-1.2" size="1" layer="27" ratio="20" rot="R90">&gt;VALUE</text>
+<polygon width="0.2" layer="21">
+<vertex x="9.6" y="-1.1"/>
+<vertex x="10.2" y="-0.5"/>
+<vertex x="10.2" y="-1.1"/>
+</polygon>
+<wire x1="-10.2" y1="1.5" x2="10.2" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-10.2" y1="3.7" x2="-10.2" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-10.2" y1="3.7" x2="10.2" y2="3.7" width="0.2" layer="21"/>
+<wire x1="10.2" y1="3.7" x2="10.2" y2="1.5" width="0.2" layer="21"/>
+<rectangle x1="-10.2" y1="3.7" x2="10.2" y2="9.7" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_MIDI_YMZ294">
@@ -55714,6 +55757,54 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="C-04397" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHA-1X08*G">
+<gates>
+<gate name="-1" symbol="MPINV" x="2.54" y="7.62"/>
+<gate name="-2" symbol="MPIN" x="2.54" y="5.08"/>
+<gate name="-3" symbol="MPIN" x="2.54" y="2.54"/>
+<gate name="-4" symbol="MPIN" x="2.54" y="0"/>
+<gate name="-5" symbol="MPIN" x="2.54" y="-2.54"/>
+<gate name="-6" symbol="MPIN" x="2.54" y="-5.08"/>
+<gate name="-7" symbol="MPIN" x="2.54" y="-7.62"/>
+<gate name="-8" symbol="MPIN" x="2.54" y="-10.16"/>
+</gates>
+<devices>
+<device name="_R" package="PHA-1X08RG">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+</connects>
+<technologies>
+<technology name="R">
+<attribute name="AKIZUKI" value="C-06361" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="PHA-1X08SG">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+</connects>
+<technologies>
+<technology name="S">
+<attribute name="AKIZUKI" value="C-04394" constant="no"/>
 </technology>
 </technologies>
 </device>
