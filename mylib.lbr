@@ -34840,7 +34840,7 @@ Source: Samtec TSW.pdf</description>
 <rectangle x1="13.716" y1="-7.89" x2="14.224" y2="-2.04" layer="21"/>
 <rectangle x1="16.256" y1="-7.89" x2="16.764" y2="-2.04" layer="21"/>
 </package>
-<package name="TSW-114-02-S-S-AKI">
+<package name="PHA-1X14SG">
 <pad name="1" x="16.51" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="2" x="13.97" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="3" x="11.43" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
@@ -54786,7 +54786,7 @@ Source: Samtec TSW.pdf</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AKIZUKI" value="C-04397" constant="no"/>
+<attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
@@ -54810,12 +54810,7 @@ Source: Samtec TSW.pdf</description>
 <connect gate="-9" pin="1" pad="9"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -55676,6 +55671,49 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="P-01306" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHA-1X14SG">
+<gates>
+<gate name="-2" symbol="MPIN" x="2.54" y="12.7"/>
+<gate name="-3" symbol="MPIN" x="2.54" y="10.16"/>
+<gate name="-4" symbol="MPIN" x="2.54" y="7.62"/>
+<gate name="-5" symbol="MPIN" x="2.54" y="5.08"/>
+<gate name="-6" symbol="MPIN" x="2.54" y="2.54"/>
+<gate name="-7" symbol="MPIN" x="2.54" y="0"/>
+<gate name="-8" symbol="MPIN" x="2.54" y="-2.54"/>
+<gate name="-9" symbol="MPIN" x="2.54" y="-5.08"/>
+<gate name="-10" symbol="MPIN" x="2.54" y="-7.62"/>
+<gate name="-11" symbol="MPIN" x="2.54" y="-10.16"/>
+<gate name="-12" symbol="MPIN" x="2.54" y="-12.7"/>
+<gate name="-13" symbol="MPIN" x="2.54" y="-15.24"/>
+<gate name="-14" symbol="MPIN" x="2.54" y="-17.78"/>
+<gate name="-1" symbol="MPINV" x="2.54" y="15.24"/>
+</gates>
+<devices>
+<device name="ST" package="PHA-1X14SG">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-11" pin="1" pad="11"/>
+<connect gate="-12" pin="1" pad="12"/>
+<connect gate="-13" pin="1" pad="13"/>
+<connect gate="-14" pin="1" pad="14"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="C-04397" constant="no"/>
 </technology>
 </technologies>
 </device>
