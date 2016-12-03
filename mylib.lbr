@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38845,6 +38845,8 @@ Source: Samtec TSW.pdf</description>
 <wire x1="10.2" y1="3.7" x2="10.2" y2="1.5" width="0.2" layer="21"/>
 <rectangle x1="-10.2" y1="3.7" x2="10.2" y2="9.7" layer="39"/>
 </package>
+<package name="SW_TACTSW_SKRPACE010">
+</package>
 </packages>
 <symbols>
 <symbol name="IC_MIDI_YMZ294">
@@ -54088,13 +54090,21 @@ w/ 3-State Output</description>
 <gate name="G$1" symbol="SW_1X1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SW_TACTSW_2P">
+<device name="_AKI" package="SW_TACTSW_2P">
 <connects>
 <connect gate="G$1" pin="P" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="AKIZUKI" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="AKIZUKI" value="P-08078" constant="no"/>
+</technology>
+<technology name="WH">
+<attribute name="AKIZUKI" value="P-08080" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_P807X" package="SW_TACTSW_P8073">
