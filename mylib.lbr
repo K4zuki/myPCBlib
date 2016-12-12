@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -54623,7 +54623,7 @@ Source: Samtec TSW.pdf</description>
 </connects>
 <technologies>
 <technology name="23K256-I">
-<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="23K256T-I/SNCT-ND" constant="no"/>
 <attribute name="MOUSER" value="579-23K256T-I/SN" constant="no"/>
 </technology>
 <technology name="AT25DN512C">
