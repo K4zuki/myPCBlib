@@ -50256,7 +50256,7 @@ Source: http://www.3M.com/ehpd</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IC_AVR_ATMEGA8.48.88.168.328_" prefix="IC">
+<deviceset name="IC_AVR_ATMEGA*8_" prefix="IC">
 <description>&lt;b&gt;MICROCONTROLLER&lt;/b&gt;&lt;p&gt;
 8 Kbytes FLASH, 1 kbytes SRAM, 512 bytes EEPROM, USART, 4-channel 10 bit ADC, 2-channel 8 bit ADC&lt;br&gt;
 Pin compatible with Atmega48, ATMega88, ATMega168&lt;br&gt;
@@ -50298,6 +50298,10 @@ Source: avr.lbr</description>
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="16"/>
+<technology name="32"/>
+<technology name="4"/>
+<technology name="8"/>
 </technologies>
 </device>
 </devices>
@@ -50395,7 +50399,7 @@ Source: avr.lbr</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IC_AVR_ATMEGA164.324.644" prefix="IC">
+<deviceset name="IC_AVR_ATMEGA*4_" prefix="IC">
 <description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 64K Bytes In-System Programmable Flash&lt;p&gt;
 Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
 <gates>
@@ -50446,7 +50450,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="XTAL2" pad="12"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="16"/>
+<technology name="32"/>
+<technology name="64"/>
 </technologies>
 </device>
 </devices>
@@ -53247,7 +53253,7 @@ w/ 3-State Output</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IC_AVR_TINY261,461,861" prefix="IC">
+<deviceset name="IC_AVR_TINY*61_" prefix="IC">
 <gates>
 <gate name="G$1" symbol="IC_AVR_TINY261,461,861" x="0" y="0"/>
 </gates>
@@ -53276,7 +53282,9 @@ w/ 3-State Output</description>
 <connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="2"/>
+<technology name="4"/>
+<technology name="8"/>
 </technologies>
 </device>
 </devices>
