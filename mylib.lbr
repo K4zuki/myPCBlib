@@ -55871,6 +55871,32 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
+<deviceset name="NCP582DSQ*">
+<description>&lt;h1&gt;NCP582&lt;/h1&gt;
+
+Ultra-Fast, Low Noise
+150 mA CMOS LDO
+Regulator with Enable</description>
+<gates>
+<gate name="G$1" symbol="NCP562SQ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT130P220X135-4N">
+<technologies>
+<technology name="18">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="NCP582DSQ18T1OSCT-ND" constant="no"/>
+<attribute name="MOUSER" value="863-NCP582DSQ18T1G" constant="no"/>
+</technology>
+<technology name="33">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="*nonstock* NCP582DSQ33T1OSTR-ND" constant="no"/>
+<attribute name="MOUSER" value="863-NCP582DSQ33T1G" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
