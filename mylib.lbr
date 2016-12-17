@@ -55871,7 +55871,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<deviceset name="NCP582DSQ*">
+<deviceset name="NCP582DSQ*" prefix="IC" uservalue="yes">
 <description>&lt;h1&gt;NCP582&lt;/h1&gt;
 
 Ultra-Fast, Low Noise
@@ -55882,6 +55882,12 @@ Regulator with Enable</description>
 </gates>
 <devices>
 <device name="" package="SOT130P220X135-4N">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
 <technologies>
 <technology name="18">
 <attribute name="AKIZUKI" value="" constant="no"/>
