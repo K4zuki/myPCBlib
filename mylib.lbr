@@ -50523,6 +50523,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="732-5962-1-ND" constant="no"/>
+<attribute name="MOUSER" value="10-614104150121" constant="no"/>
 </technology>
 </technologies>
 </device>
