@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38581,10 +38581,10 @@ Source: Samtec TSW.pdf</description>
 <text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <pad name="SHLD@1" x="6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
 <pad name="SHLD" x="-6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
-<pad name="3" x="1" y="0" drill="0.9"/>
-<pad name="2" x="-1" y="0" drill="0.9"/>
-<pad name="4" x="3.5" y="0" drill="0.9"/>
-<pad name="1" x="-3.5" y="0" drill="0.9"/>
+<pad name="2" x="1" y="0" drill="0.9"/>
+<pad name="3" x="-1" y="0" drill="0.9"/>
+<pad name="1" x="3.5" y="0" drill="0.9"/>
+<pad name="4" x="-3.5" y="0" drill="0.9"/>
 <wire x1="-7.3" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
 <wire x1="4.5" y1="0" x2="7.3" y2="0" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="-7.3" y2="-2.7" width="0.2" layer="21"/>
@@ -38604,8 +38604,8 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="7.3" y2="0" width="0.2" layer="51"/>
-<wire x1="-6.4" y1="-6.6" x2="-6.4" y2="-8.1" width="0.6" layer="46"/>
-<wire x1="6.4" y1="-6.6" x2="6.4" y2="-8.1" width="0.6" layer="46"/>
+<wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
+<wire x1="6.4" y1="-6.65" x2="6.4" y2="-8.05" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-2.6" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-10" x2="-6.6" y2="-10" width="0.2" layer="51"/>
@@ -47589,6 +47589,9 @@ Source: Samtec TSW.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="C-01604" constant="no"/>
+<attribute name="MOUSER" value="163-179PH-EX" constant="no"/>
+<attribute name="SEEED" value="320120003" constant="no"/>
+<attribute name="TH_PAD" value="3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -48557,24 +48560,28 @@ Source: http://www.3M.com/ehpd</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="P-05650" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010139" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="445-11238-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -48588,11 +48595,13 @@ Source: http://www.3M.com/ehpd</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-9962-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -48616,54 +48625,63 @@ Source: http://www.3M.com/ehpd</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3261-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010024 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3890-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010040 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5921-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010001 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="81-GRM155R60J106ME4D" constant="no"/>
 <attribute name="SEEED" value="302010053 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="12P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010049 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="18P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5858-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010016 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="2.2U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010019 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -50517,6 +50535,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="WM17143CT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="11"/>
 </technology>
 </technologies>
 </device>
@@ -50532,6 +50551,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <technology name="">
 <attribute name="DIGIKEY" value="732-5962-1-ND" constant="no"/>
 <attribute name="MOUSER" value="710-614104150121" constant="no"/>
+<attribute name="TH_PAD" value="6"/>
 </technology>
 </technologies>
 </device>
@@ -50703,66 +50723,77 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.00KLCT-ND " constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010006 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.5K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.50KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010001 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="100R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P100LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010028 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010047 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="15K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P15.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010042 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="220R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010550 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="270R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="33R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P33.0LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010609 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P4.70KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010010 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="75R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010058 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -52760,9 +52791,11 @@ w/ 3-State Output</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="" constant="no"/>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="P16468CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -52788,9 +52821,11 @@ w/ 3-State Output</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="" constant="no"/>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="732-6394-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -53603,6 +53638,7 @@ w/ 3-State Output</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-18235-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="8"/>
 </technology>
 </technologies>
 </device>
@@ -54215,6 +54251,7 @@ w/ 3-State Output</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="450-2146-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -54966,6 +55003,7 @@ Source: Samtec TSW.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="A106145CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="1"/>
 </technology>
 </technologies>
 </device>
@@ -54976,6 +55014,7 @@ Source: Samtec TSW.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="36-5019CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="1"/>
 </technology>
 </technologies>
 </device>
@@ -55144,14 +55183,17 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 <technology name="3.3">
 <attribute name="DIGIKEY" value="296-32364-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 <technology name="5.0">
 <attribute name="DIGIKEY" value="296-19663-1-ND" constant="no"/>
 <attribute name="MOUSER" value="595-TLV1117-50CDRJR" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 </technologies>
 </device>
@@ -55463,6 +55505,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="FSUSB74MPXCT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="17"/>
 </technology>
 </technologies>
 </device>
@@ -55510,6 +55553,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-27129-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="32"/>
 </technology>
 </technologies>
 </device>
@@ -55532,6 +55576,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-35520-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="5"/>
 </technology>
 </technologies>
 </device>
@@ -55566,12 +55611,15 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="48M">
-<attribute name="DIGIKEY" value="887-2327-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="478-4782-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="6.0M">
 <attribute name="DIGIKEY" value="CTX974CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 </technologies>
 </device>
@@ -55630,6 +55678,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="568-10436-5-ND" constant="no"/>
+<attribute name="SMD_PAD" value="16"/>
 </technology>
 </technologies>
 </device>
