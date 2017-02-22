@@ -54328,8 +54328,14 @@ w/ 3-State Output</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="BK"/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="DIGIKEY" value="EG1839-ND" constant="no"/>
+<attribute name="MOUSER" value="EG1839-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
