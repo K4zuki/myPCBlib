@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -38689,6 +38689,10 @@ Source: Samtec TSW.pdf</description>
 <wire x1="0" y1="-0.6" x2="0" y2="-0.8" width="0.2" layer="31"/>
 <wire x1="0.5" y1="-0.6" x2="0.5" y2="-0.8" width="0.2" layer="31"/>
 <text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.2" layer="51"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.2" layer="51"/>
 </package>
 <package name="QFN50P460X360-20N">
 <wire x1="2.3" y1="1.8" x2="2.15" y2="1.8" width="0.2" layer="21"/>
@@ -38930,9 +38934,9 @@ Source: Samtec TSW.pdf</description>
 <pad name="4" x="3.5" y="0" drill="0.9"/>
 <wire x1="-5.6" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
-<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-3" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
-<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
@@ -38942,6 +38946,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-6.5" y1="-0.65" x2="-6.5" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-0.65" x2="6.3" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 </package>
 <package name="PHA-1X07SG">
 <pad name="1" x="7.62" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
@@ -50777,6 +50782,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </technology>
 </technologies>
 </device>
+<device name="_A_UAF-99" package="CON_USB_614104150121WURTH">
+<connects>
+<connect gate="G$1" pin="D+" pad="2"/>
+<connect gate="G$1" pin="D-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD@1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TH_PAD" value="6" constant="no"/>
+<attribute name="URL" value="http://www.aitendo.com/product/4403" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="IC_TTY_MAX232" prefix="IC">
@@ -56076,7 +56096,6 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="PHA-1X14SG" prefix="X">
 <gates>
 <gate name="-2" symbol="MPIN" x="2.54" y="12.7" addlevel="always"/>
@@ -56120,7 +56139,6 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="PHA-1X08*G" prefix="X">
 <gates>
 <gate name="-1" symbol="MPINV" x="2.54" y="7.62" addlevel="always"/>
@@ -56150,7 +56168,6 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </technology>
 </technologies>
 </device>
-
 <device name="" package="PHA-1X08SG">
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
@@ -56170,7 +56187,6 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="NCP582DSQ*" prefix="IC" uservalue="yes">
 <description>&lt;h1&gt;NCP582&lt;/h1&gt;
 
@@ -56189,75 +56205,73 @@ Regulator with Enable</description>
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
-  <technology name="18">
-  <attribute name="AKIZUKI" value="" constant="no"/>
-  <attribute name="DIGIKEY" value="NCP582DSQ18T1OSCT-ND" constant="no"/>
-  <attribute name="MOUSER" value="863-NCP582DSQ18T1G" constant="no"/>
-  </technology>
-  <technology name="33">
-  <attribute name="AKIZUKI" value="" constant="no"/>
-  <attribute name="DIGIKEY" value="*nonstock* NCP582DSQ33T1OSTR-ND" constant="no"/>
-  <attribute name="MOUSER" value="863-NCP582DSQ33T1G" constant="no"/>
-  </technology>
+<technology name="18">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="NCP582DSQ18T1OSCT-ND" constant="no"/>
+<attribute name="MOUSER" value="863-NCP582DSQ18T1G" constant="no"/>
+</technology>
+<technology name="33">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="*nonstock* NCP582DSQ33T1OSTR-ND" constant="no"/>
+<attribute name="MOUSER" value="863-NCP582DSQ33T1G" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="BMM150" prefix="IC">
-  <gates>
-  <gate name="G$1" symbol="BMM150" x="-10.16" y="-2.54"/>
-  </gates>
+<gates>
+<gate name="G$1" symbol="BMM150" x="-10.16" y="-2.54"/>
+</gates>
 <devices>
-  <device name="" package="BMM150">
-    <connects>
-    <connect gate="G$1" pin="CSB" pad="A5"/>
-    <connect gate="G$1" pin="DRDY" pad="D4"/>
-    <connect gate="G$1" pin="GND" pad="C5 E1 E3"/>
-    <connect gate="G$1" pin="INT" pad="D2"/>
-    <connect gate="G$1" pin="PS" pad="A1"/>
-    <connect gate="G$1" pin="SCK" pad="A3"/>
-    <connect gate="G$1" pin="SDI" pad="B4"/>
-    <connect gate="G$1" pin="SDO" pad="C1"/>
-    <connect gate="G$1" pin="VDD" pad="E5"/>
-    <connect gate="G$1" pin="VDDIO" pad="B2"/>
-    </connects>
-    <technologies>
-    <technology name=""/>
-    </technologies>
-  </device>
+<device name="" package="BMM150">
+<connects>
+<connect gate="G$1" pin="CSB" pad="A5"/>
+<connect gate="G$1" pin="DRDY" pad="D4"/>
+<connect gate="G$1" pin="GND" pad="C5 E1 E3"/>
+<connect gate="G$1" pin="INT" pad="D2"/>
+<connect gate="G$1" pin="PS" pad="A1"/>
+<connect gate="G$1" pin="SCK" pad="A3"/>
+<connect gate="G$1" pin="SDI" pad="B4"/>
+<connect gate="G$1" pin="SDO" pad="C1"/>
+<connect gate="G$1" pin="VDD" pad="E5"/>
+<connect gate="G$1" pin="VDDIO" pad="B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-
 <deviceset name="PHA-1X07SG">
-  <gates>
-  <gate name="1" symbol="MPINV" x="2.54" y="7.62"/>
-  <gate name="2" symbol="MPIN" x="2.54" y="5.08"/>
-  <gate name="3" symbol="MPIN" x="2.54" y="2.54"/>
-  <gate name="4" symbol="MPIN" x="2.54" y="0"/>
-  <gate name="5" symbol="MPIN" x="2.54" y="-2.54"/>
-  <gate name="6" symbol="MPIN" x="2.54" y="-5.08"/>
-  <gate name="7" symbol="MPIN" x="2.54" y="-7.62"/>
-  </gates>
+<gates>
+<gate name="1" symbol="MPINV" x="2.54" y="7.62"/>
+<gate name="2" symbol="MPIN" x="2.54" y="5.08"/>
+<gate name="3" symbol="MPIN" x="2.54" y="2.54"/>
+<gate name="4" symbol="MPIN" x="2.54" y="0"/>
+<gate name="5" symbol="MPIN" x="2.54" y="-2.54"/>
+<gate name="6" symbol="MPIN" x="2.54" y="-5.08"/>
+<gate name="7" symbol="MPIN" x="2.54" y="-7.62"/>
+</gates>
 <devices>
-  <device name="" package="PHA-1X07SG">
-    <connects>
-    <connect gate="1" pin="1" pad="1"/>
-    <connect gate="2" pin="1" pad="2"/>
-    <connect gate="3" pin="1" pad="3"/>
-    <connect gate="4" pin="1" pad="4"/>
-    <connect gate="5" pin="1" pad="5"/>
-    <connect gate="6" pin="1" pad="6"/>
-    <connect gate="7" pin="1" pad="7"/>
-    </connects>
-    <technologies>
-    <technology name="">
-    <attribute name="AKIZUKI" value="C-04393" constant="no"/>
-    </technology>
-    </technologies>
-  </device>
+<device name="" package="PHA-1X07SG">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="2" pin="1" pad="2"/>
+<connect gate="3" pin="1" pad="3"/>
+<connect gate="4" pin="1" pad="4"/>
+<connect gate="5" pin="1" pad="5"/>
+<connect gate="6" pin="1" pad="6"/>
+<connect gate="7" pin="1" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="C-04393" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
-
 <deviceset name="BMI160" prefix="IC">
 <gates>
 <gate name="G$1" symbol="BMI160" x="-10.16" y="-15.24"/>
