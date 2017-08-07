@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -38689,6 +38689,10 @@ Source: Samtec TSW.pdf</description>
 <wire x1="0" y1="-0.6" x2="0" y2="-0.8" width="0.2" layer="31"/>
 <wire x1="0.5" y1="-0.6" x2="0.5" y2="-0.8" width="0.2" layer="31"/>
 <text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.2" layer="51"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.2" layer="51"/>
 </package>
 <package name="QFN50P460X360-20N">
 <wire x1="2.3" y1="1.8" x2="2.15" y2="1.8" width="0.2" layer="21"/>
@@ -38930,9 +38934,9 @@ Source: Samtec TSW.pdf</description>
 <pad name="4" x="3.5" y="0" drill="0.9"/>
 <wire x1="-5.6" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
-<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-3" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
-<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
@@ -38942,6 +38946,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-6.5" y1="-0.65" x2="-6.5" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-0.65" x2="6.3" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 </package>
 <package name="PHA-1X07SG">
 <pad name="1" x="7.62" y="0" drill="0.8" diameter="1.5" shape="octagon" rot="R180"/>
@@ -50814,6 +50819,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <technology name="">
 <attribute name="TH_PAD" value="8" constant="no"/>
 <attribute name="URL" value="http://www.aitendo.com/product/4396" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_A_UAF-99" package="CON_USB_614104150121WURTH">
+<connects>
+<connect gate="G$1" pin="D+" pad="2"/>
+<connect gate="G$1" pin="D-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD@1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TH_PAD" value="6" constant="no"/>
+<attribute name="URL" value="http://www.aitendo.com/product/4403" constant="no"/>
 </technology>
 </technologies>
 </device>
