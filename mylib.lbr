@@ -48837,7 +48837,7 @@ Source: Samtec TSW.pdf</description>
 <gate name="2" symbol="PART_RELAY_SW" x="20.32" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="G5V1">
+<device name="_G5V1" package="G5V1">
 <connects>
 <connect gate="1" pin="1" pad="2"/>
 <connect gate="1" pin="2" pad="9"/>
