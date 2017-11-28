@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5947,7 +5947,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <rectangle x1="-1.651" y1="-2.3" x2="-0.9009" y2="2.3" layer="51"/>
 <rectangle x1="0.9144" y1="-2.3" x2="1.6645" y2="2.3" layer="51"/>
 </package>
-<package name="RELAY_G5V1">
+<package name="G5V1">
 <description>&lt;b&gt;RELAY&lt;/b&gt;&lt;p&gt;
 1 x switch, 0.5 A/125 V AC, 1 A/24 V DC , Omron</description>
 <wire x1="-1.6" y1="-3.5" x2="4.1" y2="-3.5" width="0.2032" layer="21"/>
@@ -48837,7 +48837,7 @@ Source: Samtec TSW.pdf</description>
 <gate name="2" symbol="PART_RELAY_SW" x="20.32" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="RELAY_G5V1">
+<device name="" package="G5V1">
 <connects>
 <connect gate="1" pin="1" pad="2"/>
 <connect gate="1" pin="2" pad="9"/>
