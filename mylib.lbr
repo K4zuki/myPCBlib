@@ -48846,7 +48846,9 @@ Source: Samtec TSW.pdf</description>
 <connect gate="2" pin="NO" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="Y14H-1C-5DS">
+<attribute name="AKIZUKI" value="P-01346" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
