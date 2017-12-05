@@ -56725,6 +56725,7 @@ Regulator with Enable</description>
 <technologies>
 <technology name="DC5">
 <attribute name="DIGIKEY" value="Z116-ND" constant="no"/>
+<attribute name="MOUSER" value="653-G6K-2P-DC5" constant="no"/>
 </technology>
 </technologies>
 </device>
