@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -39418,26 +39418,6 @@ Source: Samtec TSW.pdf</description>
 <dimension x1="9.5" y1="41.25" x2="34.5" y2="2.75" x3="22" y3="22" textsize="1.016" textratio="20" layer="47" dtype="horizontal"/>
 <hole x="34.5" y="2.75" drill="2.5"/>
 <dimension x1="34.5" y1="2.75" x2="34.5" y2="0" x3="40" y3="1.375" textsize="1.016" textratio="20" layer="47" dtype="vertical"/>
-<wire x1="0" y1="44" x2="37.75" y2="44" width="0.8" layer="41"/>
-<wire x1="44" y1="37.75" x2="44" y2="0" width="0.8" layer="41"/>
-<wire x1="44" y1="0" x2="6.25" y2="0" width="0.8" layer="41"/>
-<wire x1="0" y1="6.25" x2="0" y2="44" width="0.8" layer="41"/>
-<wire x1="3.25" y1="6.25" x2="6.25" y2="3.25" width="0.8" layer="41" curve="-90"/>
-<wire x1="3.25" y1="6.25" x2="0" y2="6.25" width="0.8" layer="41"/>
-<wire x1="6.25" y1="3.25" x2="6.25" y2="0" width="0.8" layer="41"/>
-<wire x1="37.75" y1="44" x2="37.75" y2="40.75" width="0.8" layer="41"/>
-<wire x1="40.75" y1="37.75" x2="44" y2="37.75" width="0.8" layer="41"/>
-<wire x1="40.75" y1="37.75" x2="37.75" y2="40.75" width="0.8" layer="41" curve="-90"/>
-<wire x1="3.25" y1="6.25" x2="6.25" y2="3.25" width="0.8" layer="42" curve="-90"/>
-<wire x1="3.25" y1="6.25" x2="0" y2="6.25" width="0.8" layer="42"/>
-<wire x1="0" y1="6.25" x2="0" y2="44" width="0.8" layer="42"/>
-<wire x1="0" y1="44" x2="37.75" y2="44" width="0.8" layer="42"/>
-<wire x1="44" y1="37.75" x2="44" y2="0" width="0.8" layer="42"/>
-<wire x1="44" y1="0" x2="6.25" y2="0" width="0.8" layer="42"/>
-<wire x1="6.25" y1="0" x2="6.25" y2="3.25" width="0.8" layer="42"/>
-<wire x1="40.75" y1="37.75" x2="37.75" y2="40.75" width="0.8" layer="42" curve="-90"/>
-<wire x1="37.75" y1="44" x2="37.75" y2="40.75" width="0.8" layer="42"/>
-<wire x1="44" y1="37.75" x2="40.75" y2="37.75" width="0.8" layer="42"/>
 <dimension x1="9.5" y1="41.25" x2="34.5" y2="2.75" x3="22" y3="22" textsize="1.016" textratio="20" layer="47" dtype="vertical" width="0.1"/>
 <dimension x1="34.5" y1="2.75" x2="44" y2="2.75" x3="39.25" y3="-7" textsize="1.016" textratio="20" layer="47" dtype="horizontal" width="0.1"/>
 <dimension x1="10.75" y1="41.25" x2="8.25" y2="41.25" x3="8.25" y3="41.25" textsize="1.016" textratio="20" layer="47" dtype="diameter" width="0.1"/>
@@ -39446,6 +39426,34 @@ Source: Samtec TSW.pdf</description>
 <circle x="9.5" y="41.25" radius="1.4" width="0.8" layer="42"/>
 <circle x="34.5" y="2.75" radius="1.4" width="0.8" layer="42"/>
 <circle x="9.5" y="41.25" radius="1.4" width="0.8" layer="41"/>
+<polygon width="0" layer="41">
+<vertex x="44" y="44"/>
+<vertex x="37.75" y="44"/>
+<vertex x="37.75" y="40.7" curve="90.962952"/>
+<vertex x="40.75" y="37.75"/>
+<vertex x="44" y="37.75"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="44" y="44"/>
+<vertex x="37.75" y="44"/>
+<vertex x="37.75" y="40.7" curve="90.962952"/>
+<vertex x="40.75" y="37.75"/>
+<vertex x="44" y="37.75"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="0" y="0"/>
+<vertex x="6.25" y="0"/>
+<vertex x="6.25" y="3.3" curve="90.962952"/>
+<vertex x="3.25" y="6.25"/>
+<vertex x="0" y="6.25"/>
+</polygon>
+<polygon width="0" layer="41">
+<vertex x="0" y="0"/>
+<vertex x="6.25" y="0"/>
+<vertex x="6.25" y="3.3" curve="90.962952"/>
+<vertex x="3.25" y="6.25"/>
+<vertex x="0" y="6.25"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -57000,6 +57008,20 @@ Regulator with Enable</description>
 <technology name="5V">
 <attribute name="DIGIKEY" value="Z132-ND" constant="no"/>
 <attribute name="MOUSER" value="653-G6K-2P-Y-DC5" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HAMMOND-PCB-*" prefix="PCB" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="UNIVERSALBOARD-AKI" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-1551R" package="HAMMOND1551R">
+<technologies>
+<technology name="BK">
+<attribute name="DIGIKEY" value="HM913-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
