@@ -55924,7 +55924,7 @@ Source: Samtec TSW.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL2-*" prefix="Q" uservalue="yes">
+<deviceset name="CRYSTAL2-*" prefix="Y" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CLOCK-CRYSTAL" x="0" y="0"/>
 </gates>
@@ -56469,7 +56469,7 @@ http://www.mouser.jp/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM5/?qs=LZSZKJVF%
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL4-*" prefix="Q" uservalue="yes">
+<deviceset name="CRYSTAL4-*" prefix="Y" uservalue="yes">
 <description>Crystal 4 pins</description>
 <gates>
 <gate name="G$1" symbol="CLOCK-CRYSTAL-4" x="0" y="0"/>
