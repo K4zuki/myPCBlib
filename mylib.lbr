@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13379,10 +13379,6 @@ grid 7.62 mm, diameter 18 mm</description>
 <pad name="4" x="3.2" y="-2.2" drill="1" shape="octagon"/>
 <text x="-3" y="3.6" size="1.2" layer="25" font="vector" ratio="17">&gt;NAME</text>
 <text x="-3" y="-5" size="1.2" layer="27" font="vector" ratio="17">&gt;VALUE</text>
-<text x="-4.3" y="1.6" size="1.27" layer="51" ratio="10">1</text>
-<text x="3.5" y="1.5" size="1.27" layer="51" ratio="10">2</text>
-<text x="-4.5" y="-2.7" size="1.27" layer="51" ratio="10">3</text>
-<text x="3.5" y="-2.7" size="1.27" layer="51" ratio="10">4</text>
 <wire x1="-2.1" y1="3" x2="2.1" y2="3" width="0.2" layer="21"/>
 <wire x1="-2.1" y1="-3" x2="2.1" y2="-3" width="0.2" layer="21"/>
 <wire x1="-3" y1="1" x2="-3" y2="-1" width="0.2" layer="21"/>
@@ -37504,7 +37500,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-3.3" y1="1.7" x2="3.3" y2="1.7" width="0.2" layer="51"/>
 <wire x1="-3.3" y1="-1.7" x2="3.3" y2="-1.7" width="0.2" layer="51"/>
 <wire x1="3.3" y1="1.7" x2="3.3" y2="-1.7" width="0.2" layer="21"/>
-<circle x="-3.7" y="-2.1" radius="0.3" width="0.2" layer="51"/>
+<circle x="-3.7" y="-2.1" radius="0.3" width="0.2" layer="21"/>
 </package>
 <package name="IC-08-0.65-160MIL">
 <smd name="8" x="-0.975" y="3.2" dx="0.4" dy="1.2" layer="1" stop="no" cream="no"/>
@@ -39391,7 +39387,7 @@ Source: Samtec TSW.pdf</description>
 <text x="2.3" y="2.1" size="1.016" layer="51" ratio="20">NC</text>
 <text x="2.4" y="-3.1" size="1.016" layer="51" ratio="20">NC</text>
 </package>
-<package name="HAMMOND1551R">
+<package name="HAMMOND-1551R">
 <wire x1="44" y1="0" x2="6.25" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="6.25" x2="0" y2="44" width="0" layer="20"/>
 <wire x1="3.25" y1="6.25" x2="6.25" y2="3.25" width="0" layer="20" curve="-90"/>
@@ -40002,6 +39998,210 @@ Source: Samtec TSW.pdf</description>
 </polygon>
 <text x="0" y="0" size="1.27" layer="25" ratio="17" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="27" ratio="17" align="center">&gt;VALUE</text>
+</package>
+<package name="HAMMOND-1593L">
+<dimension x1="82.6" y1="56.6" x2="0" y2="56.6" x3="41.3" y3="65.8" textsize="2" layer="47" precision="6"/>
+<dimension x1="82.6" y1="0" x2="82.6" y2="56.6" x3="92.8" y3="28.3" textsize="2" layer="47" precision="6"/>
+<hole x="14.3" y="42.3" drill="3.2"/>
+<circle x="14.3" y="42.3" radius="3.5" width="0" layer="42"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="42"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="42"/>
+<hole x="68.3" y="42.3" drill="3.2"/>
+<circle x="68.3" y="42.3" radius="3.5" width="0" layer="41"/>
+<wire x1="65" y1="53.3" x2="58.4" y2="53.3" width="0" layer="20" curve="-180"/>
+<circle x="61.7" y="53.3" radius="3.3" width="0" layer="41"/>
+<circle x="61.7" y="53.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="58.4" y1="53.3" x2="65" y2="56.6" layer="42" rot="R180"/>
+<rectangle x1="58.4" y1="53.3" x2="65" y2="56.6" layer="41" rot="R180"/>
+<wire x1="65" y1="53.3" x2="65" y2="56.6" width="0" layer="20"/>
+<wire x1="58.4" y1="53.3" x2="58.4" y2="56.6" width="0" layer="20"/>
+<wire x1="65" y1="56.6" x2="82.6" y2="56.6" width="0" layer="20"/>
+<hole x="14.3" y="14.3" drill="3.2"/>
+<circle x="14.3" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="41"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="17.6" y2="56.6" width="0" layer="20"/>
+<wire x1="24.2" y1="53.3" x2="24.2" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="56.6" x2="0" y2="56.6" width="0" layer="20"/>
+<hole x="68.3" y="14.3" drill="3.2"/>
+<circle x="68.3" y="14.3" radius="3.5" width="0" layer="42"/>
+<wire x1="65" y1="3.3" x2="58.4" y2="3.3" width="0" layer="20" curve="180"/>
+<circle x="61.7" y="3.3" radius="3.3" width="0" layer="42"/>
+<circle x="61.7" y="3.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="58.4" y1="0" x2="65" y2="3.3" layer="41" rot="R180"/>
+<rectangle x1="58.4" y1="0" x2="65" y2="3.3" layer="42" rot="R180"/>
+<wire x1="65" y1="3.3" x2="58.4" y2="3.3" width="0" layer="20" curve="180"/>
+<wire x1="65" y1="3.3" x2="65" y2="0" width="0" layer="20"/>
+<wire x1="58.4" y1="3.3" x2="58.4" y2="0" width="0" layer="20"/>
+<wire x1="65" y1="0" x2="82.6" y2="0" width="0" layer="20"/>
+<circle x="68.3" y="42.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.3" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.3" y="42.3" radius="3.5" width="0" layer="41"/>
+<circle x="68.3" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="58.4" y1="0" x2="24.2" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="0" x2="24.2" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="17.6" y2="0" width="0" layer="20"/>
+<wire x1="17.6" y1="0" x2="17.6" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="56.6" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="56.6" x2="58.4" y2="56.6" width="0" layer="20"/>
+<wire x1="82.6" y1="0" x2="82.6" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="3.3" x2="24.2" y2="3.3" width="0" layer="20" curve="-180"/>
+<dimension x1="20.9" y1="53.3" x2="0" y2="53.3" x3="10.45" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="61.7" y1="53.3" x2="82.6" y2="53.3" x3="72.15" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="61.7" y2="53.3" x3="41.3" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="0" y2="14.3" x3="7.15" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="68.3" y2="14.3" x3="41.3" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="68.3" y1="14.3" x2="82.6" y2="14.3" x3="75.45" y3="20.1" textsize="2" layer="47" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="14.3" y2="0" x3="-4.3" y3="7.15" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="14.3" y2="42.3" x3="-4.3" y3="28.3" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.3" y1="42.3" x2="14.3" y2="56.6" x3="-4.3" y3="49.45" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="22.95340625" y2="50.716684375" x3="27.806909375" y3="44.6106625" textsize="2" layer="47" dtype="radius" precision="6"/>
+<dimension x1="15.601975" y1="43.22998125" x2="12.998025" y2="41.37001875" x3="12.998021875" y3="41.37001875" textsize="2" layer="47" dtype="diameter"/>
+</package>
+<package name="HAMMOND-1593K">
+<dimension x1="57.6" y1="56.6" x2="0" y2="56.6" x3="28.8" y3="65.8" textsize="2" layer="47" precision="6"/>
+<dimension x1="57.6" y1="0" x2="57.6" y2="56.6" x3="67.8" y3="28.3" textsize="2" layer="47" precision="6"/>
+<hole x="14.8" y="42.3" drill="3.2"/>
+<circle x="14.8" y="42.3" radius="3.5" width="0" layer="42"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="42"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="42"/>
+<hole x="42.8" y="42.3" drill="3.2"/>
+<circle x="42.8" y="42.3" radius="3.5" width="0" layer="41"/>
+<hole x="14.8" y="14.3" drill="3.2"/>
+<circle x="14.8" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="41"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="17.6" y2="56.6" width="0" layer="20"/>
+<wire x1="24.2" y1="53.3" x2="24.2" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="56.6" x2="0" y2="56.6" width="0" layer="20"/>
+<hole x="42.8" y="14.3" drill="3.2"/>
+<circle x="42.8" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="42.8" y="42.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.8" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.8" y="42.3" radius="3.5" width="0" layer="41"/>
+<circle x="42.8" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="57.6" y1="0" x2="24.2" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="0" x2="24.2" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="17.6" y2="0" width="0" layer="20"/>
+<wire x1="17.6" y1="0" x2="17.6" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="56.6" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="56.6" x2="57.6" y2="56.6" width="0" layer="20"/>
+<wire x1="57.6" y1="0" x2="57.6" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="3.3" x2="24.2" y2="3.3" width="0" layer="20" curve="-180"/>
+<dimension x1="20.9" y1="53.3" x2="0" y2="53.3" x3="10.45" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="0" y2="14.3" x3="7.4" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="42.8" y2="14.3" x3="28.8" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="42.8" y1="14.3" x2="57.6" y2="14.3" x3="50.2" y3="20.1" textsize="2" layer="47" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="14.3" y2="0" x3="-4.3" y3="7.15" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="14.8" y2="42.3" x3="-4.3" y3="28.3" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.8" y1="42.3" x2="14.3" y2="56.6" x3="-4.3" y3="49.45" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="22.95340625" y2="50.716684375" x3="27.806909375" y3="44.6106625" textsize="2" layer="47" dtype="radius" precision="6"/>
+<dimension x1="16.101975" y1="43.22998125" x2="13.498025" y2="41.37001875" x3="13.498025" y3="41.370021875" textsize="2" layer="47" dtype="diameter"/>
+</package>
+<package name="HAMMOND-1593-28">
+<wire x1="0" y1="0" x2="61" y2="0" width="0" layer="20"/>
+<wire x1="61" y1="0" x2="61" y2="22.7" width="0" layer="20"/>
+<wire x1="61" y1="22.7" x2="0" y2="22.7" width="0" layer="20"/>
+<wire x1="0" y1="22.7" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="61" y2="0" x3="30.5" y3="-8.1" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="22.7" x2="0" y2="0" x3="-5" y3="11.35" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="0.9" x2="0" y2="21.8" x3="-1.1" y3="11.35" textsize="2" layer="47" dtype="vertical"/>
+<rectangle x1="1" y1="0" x2="61" y2="0.9" layer="39"/>
+<rectangle x1="0" y1="0" x2="1.4" y2="22.7" layer="39"/>
+<rectangle x1="59.6" y1="0" x2="61" y2="22.7" layer="39"/>
+<rectangle x1="1" y1="21.8" x2="61" y2="22.7" layer="39"/>
+<dimension x1="1.4" y1="0" x2="59.6" y2="0" x3="30.5" y3="-4" textsize="2" layer="47"/>
+<rectangle x1="0" y1="0" x2="1.4" y2="22.7" layer="40"/>
+<rectangle x1="1" y1="21.8" x2="61" y2="22.7" layer="40"/>
+<rectangle x1="1" y1="0" x2="61" y2="0.9" layer="40"/>
+<rectangle x1="59.6" y1="0" x2="61" y2="22.7" layer="40"/>
+<wire x1="0" y1="6.1" x2="61" y2="6.1" width="0" layer="51" style="dashdot"/>
+<text x="61.8" y="6.1" size="1.27" layer="51" ratio="11" align="center-left">&lt;- PCB surface(t=1.6)</text>
+</package>
+<package name="ST-12-303FC-G">
+<wire x1="6" y1="-6" x2="-6" y2="-6" width="0.3" layer="21"/>
+<wire x1="-6" y1="1.2" x2="-6" y2="3.8" width="0.3" layer="51"/>
+<wire x1="-6" y1="3.8" x2="-6" y2="6" width="0.3" layer="21"/>
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.3" layer="21"/>
+<pad name="1" x="-6.3" y="-2.5" drill="1.2"/>
+<pad name="2" x="6.3" y="-2.5" drill="1.2"/>
+<pad name="3" x="-6.3" y="2.5" drill="1.2"/>
+<pad name="4" x="6.3" y="2.5" drill="1.2"/>
+<pad name="-" x="3.81" y="5.08" drill="0.8"/>
+<pad name="+" x="-3.81" y="-5.08" drill="0.8"/>
+<wire x1="-6" y1="-6" x2="-6" y2="-3.8" width="0.3" layer="21"/>
+<wire x1="-6" y1="-3.8" x2="-6" y2="-1.2" width="0.3" layer="51"/>
+<wire x1="-6" y1="1.2" x2="-6" y2="-1.2" width="0.3" layer="21"/>
+<wire x1="6" y1="3.8" x2="6" y2="6" width="0.3" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="-3.8" width="0.3" layer="21"/>
+<wire x1="6" y1="-3.8" x2="6" y2="-1.2" width="0.3" layer="51"/>
+<wire x1="6" y1="1.2" x2="6" y2="-1.2" width="0.3" layer="21"/>
+<wire x1="6" y1="1.2" x2="6" y2="3.8" width="0.3" layer="51"/>
+<hole x="0" y="-4.5" drill="1.8"/>
+<text x="-6" y="6.2" size="1.778" layer="25" ratio="17">&gt;NAME</text>
+<text x="6" y="-6.2" size="1.778" layer="27" ratio="17" rot="R180">&gt;VALUE</text>
+</package>
+<package name="TS-ALGWRH-G">
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.3" layer="21"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.3" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.3" layer="21"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.3" layer="21"/>
+<pad name="+" x="0" y="2.7" drill="0.8"/>
+<pad name="-" x="0" y="-2.7" drill="0.8"/>
+<pad name="3" x="-3.25" y="-2.25" drill="1.2"/>
+<pad name="4" x="3.25" y="-2.25" drill="1.2"/>
+<pad name="2" x="3.25" y="2.25" drill="1.2"/>
+<pad name="1" x="-3.25" y="2.25" drill="1.2"/>
+<text x="-5" y="5.2" size="1.778" layer="25" ratio="17">&gt;NAME</text>
+<text x="5" y="-5.2" size="1.778" layer="27" ratio="17" rot="R180">&gt;VALUE</text>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="4" y1="4" x2="-4" y2="-4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="-4" y1="4" x2="4" y2="-4" width="0.1" layer="51" style="dashdot"/>
+<wire x1="4" y1="-0.1" x2="5" y2="-1.1" width="0.1" layer="48"/>
+<wire x1="5" y1="-1.1" x2="7.8" y2="-1.1" width="0.1" layer="48"/>
+<text x="8" y="-1.1" size="1" layer="48" ratio="11" align="center-left">h=4.8mm</text>
+<wire x1="5" y1="-5" x2="6.1" y2="-6.1" width="0.1" layer="48"/>
+<wire x1="6.1" y1="-6.1" x2="8.4" y2="-6.1" width="0.1" layer="48"/>
+<text x="8.6" y="-6.1" size="1" layer="48" ratio="11" align="center-left">h=7.5mm</text>
+<polygon width="0.1" layer="21">
+<vertex x="0" y="3.8"/>
+<vertex x="-0.4" y="4.2"/>
+<vertex x="0.4" y="4.2"/>
+</polygon>
+</package>
+<package name="PH127-2X5MG-1.5">
+<text x="3.4" y="1.8" size="1" layer="25" ratio="20">&gt;NAME</text>
+<wire x1="-3.3" y1="1.7" x2="-3.3" y2="-1.7" width="0.2" layer="21"/>
+<wire x1="-3.3" y1="1.7" x2="3.3" y2="1.7" width="0.2" layer="51"/>
+<wire x1="-3.3" y1="-1.7" x2="3.3" y2="-1.7" width="0.2" layer="51"/>
+<wire x1="3.3" y1="1.7" x2="3.3" y2="-1.7" width="0.2" layer="21"/>
+<circle x="-3.7" y="-2.1" radius="0.3" width="0.2" layer="21"/>
+<smd name="1" x="-2.54" y="-1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="6" x="0" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
+<dimension x1="-2.54" y1="3.302" x2="-2.54" y2="-3.302" x3="-4.572" y3="0" textsize="1" textratio="11" layer="47"/>
 </package>
 </packages>
 <symbols>
@@ -47870,10 +48070,10 @@ Source: Samtec TSW.pdf</description>
 <text x="-0.508" y="-4.318" size="1.524" layer="95">G</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="pwr"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="out" rot="R180"/>
-<pin name="EN" x="-7.62" y="-2.54" visible="off" length="short" direction="in"/>
+<pin name="IN" x="-7.62" y="0" visible="pad" length="short" direction="pwr"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
 <text x="-4.445" y="-3.175" size="1.524" layer="95">E</text>
 </symbol>
 <symbol name="IC-TTL-7400-SINGLE">
@@ -50267,6 +50467,25 @@ Source: http://www.3M.com/ehpd</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="-ARM3" package="PH127-2X5MG-1.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="C-10904" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -57767,11 +57986,26 @@ Regulator with Enable</description>
 <gate name="G$1" symbol="UNIVERSALBOARD-AKI" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-1551R" package="HAMMOND1551R">
+<device name="-1551R" package="HAMMOND-1551R">
 <technologies>
 <technology name="BK">
 <attribute name="DIGIKEY" value="HM913-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="-1593L" package="HAMMOND-1593L">
+<technologies>
+<technology name="BK"/>
+</technologies>
+</device>
+<device name="-1593K" package="HAMMOND-1593K">
+<technologies>
+<technology name="BK"/>
+</technologies>
+</device>
+<device name="-66X28" package="HAMMOND-1593-28">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -57834,6 +58068,38 @@ Regulator with Enable</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TACTSW2-LED-*" prefix="SW" uservalue="yes">
+<gates>
+<gate name="SW" symbol="SW-1X1" x="0" y="0"/>
+<gate name="LED" symbol="LED-1SEG-SINGLE" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="-12SQ" package="ST-12-303FC-G">
+<connects>
+<connect gate="LED" pin="A" pad="+"/>
+<connect gate="LED" pin="K" pad="-"/>
+<connect gate="SW" pin="P" pad="1 2"/>
+<connect gate="SW" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="GR"/>
+</technologies>
+</device>
+<device name="-10SQ" package="TS-ALGWRH-G">
+<connects>
+<connect gate="LED" pin="A" pad="+"/>
+<connect gate="LED" pin="K" pad="-"/>
+<connect gate="SW" pin="P" pad="3 4"/>
+<connect gate="SW" pin="S" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="WH">
+<attribute name="AKIZUKI" value="P-12722" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
