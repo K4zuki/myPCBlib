@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="0" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -40203,6 +40203,52 @@ Source: Samtec TSW.pdf</description>
 <smd name="10" x="2.54" y="1.778" dx="3" dy="0.75" layer="1" rot="R90"/>
 <dimension x1="-2.54" y1="3.302" x2="-2.54" y2="-3.302" x3="-4.572" y3="0" textsize="1" textratio="11" layer="47"/>
 </package>
+<package name="B4B-XH-A(LF)(SN)">
+<pad name="1" x="3.75" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="2" x="1.25" y="0" drill="0.8" rot="R180"/>
+<pad name="3" x="-1.25" y="0" drill="0.8" rot="R180"/>
+<pad name="4" x="-3.75" y="0" drill="0.8" rot="R180"/>
+<wire x1="6.2" y1="2.35" x2="-6.2" y2="2.35" width="0.2" layer="21"/>
+<wire x1="6.2" y1="2.35" x2="6.2" y2="-3.45" width="0.2" layer="21"/>
+<wire x1="6.2" y1="-3.45" x2="-6.2" y2="-3.45" width="0.2" layer="21"/>
+<wire x1="-6.2" y1="-3.45" x2="-6.2" y2="2.35" width="0.2" layer="21"/>
+<wire x1="4.2" y1="2.35" x2="3.2" y2="2.35" width="0.2" layer="51"/>
+<wire x1="-3.2" y1="2.35" x2="-4.2" y2="2.35" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.778" layer="25" ratio="17" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="27" ratio="17" rot="R180" align="center">&gt;VALUE</text>
+</package>
+<package name="S4B-XH-A(LF)(SN)">
+<pad name="1" x="-3.75" y="0" drill="0.9" diameter="1.5" shape="square"/>
+<pad name="2" x="-1.25" y="0" drill="0.9" diameter="1.5"/>
+<pad name="3" x="1.25" y="0" drill="0.9" diameter="1.5"/>
+<pad name="4" x="3.75" y="0" drill="0.9" diameter="1.5"/>
+<wire x1="6.2" y1="2.3" x2="5.4" y2="2.3" width="0.2" layer="21"/>
+<wire x1="-5.4" y1="2.3" x2="-6.2" y2="2.3" width="0.2" layer="21"/>
+<wire x1="6.2" y1="2.3" x2="6.2" y2="-9.2" width="0.2" layer="21"/>
+<wire x1="6.2" y1="-9.2" x2="-6.2" y2="-9.2" width="0.2" layer="21"/>
+<wire x1="-6.2" y1="-9.2" x2="-6.2" y2="2.3" width="0.2" layer="21"/>
+<wire x1="4.2" y1="-9.2" x2="3.2" y2="-9.2" width="0.2" layer="51"/>
+<wire x1="-3.2" y1="-9.2" x2="-4.2" y2="-9.2" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.778" layer="25" ratio="17" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="27" ratio="17" align="center">&gt;VALUE</text>
+<polygon width="0.2" layer="51">
+<vertex x="4.2" y="-9.2"/>
+<vertex x="4.2" y="-6.6"/>
+<vertex x="3.8" y="-6.2"/>
+<vertex x="3.2" y="-6.2"/>
+<vertex x="3.2" y="-9.2"/>
+</polygon>
+<polygon width="0.2" layer="51">
+<vertex x="-3.2" y="-9.2"/>
+<vertex x="-3.2" y="-6.2"/>
+<vertex x="-3.8" y="-6.2"/>
+<vertex x="-4.2" y="-6.6"/>
+<vertex x="-4.2" y="-9.2"/>
+</polygon>
+<wire x1="5.4" y1="-2.2" x2="-5.4" y2="-2.2" width="0.2" layer="21"/>
+<wire x1="5.4" y1="2.3" x2="5.4" y2="-2.2" width="0.2" layer="21"/>
+<wire x1="-5.4" y1="2.3" x2="-5.4" y2="-2.2" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC-MIDI-YMZ294">
@@ -58100,6 +58146,48 @@ Regulator with Enable</description>
 <technology name="WH">
 <attribute name="AKIZUKI" value="P-12722" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B4B-XH-A" prefix="CON" uservalue="yes">
+<gates>
+<gate name="1" symbol="MPINV" x="0" y="0"/>
+<gate name="2" symbol="MPIN" x="0" y="-2.54"/>
+<gate name="3" symbol="MPIN" x="0" y="-5.08"/>
+<gate name="4" symbol="MPIN" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="B4B-XH-A(LF)(SN)">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="2" pin="1" pad="2"/>
+<connect gate="3" pin="1" pad="3"/>
+<connect gate="4" pin="1" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S4B-XH-A" prefix="CON" uservalue="yes">
+<gates>
+<gate name="-1" symbol="MPINV" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="MPIN" x="0" y="-2.54" addlevel="always"/>
+<gate name="-3" symbol="MPIN" x="0" y="-5.08" addlevel="always"/>
+<gate name="-4" symbol="MPIN" x="0" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="S4B-XH-A(LF)(SN)">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
