@@ -40901,6 +40901,17 @@ Source: Samtec TSW.pdf</description>
 <vertex x="-0.55" y="-9.2"/>
 </polygon>
 </package>
+<package name="B2B-XH-A(LF)(SN)">
+<pad name="1" x="1.21" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="2" x="-1.29" y="0" drill="0.8" rot="R180"/>
+<wire x1="3.7" y1="2.35" x2="-3.7" y2="2.35" width="0.2" layer="21"/>
+<wire x1="3.7" y1="2.35" x2="3.7" y2="-3.45" width="0.2" layer="21"/>
+<wire x1="3.7" y1="-3.45" x2="-3.7" y2="-3.45" width="0.2" layer="21"/>
+<wire x1="-3.7" y1="-3.45" x2="-3.7" y2="2.35" width="0.2" layer="21"/>
+<wire x1="1.66" y1="2.35" x2="-1.66" y2="2.35" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.778" layer="25" ratio="17" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="27" ratio="17" rot="R180" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IC-MIDI-YMZ294">
@@ -59683,6 +59694,23 @@ Regulator with Enable</description>
 <connects>
 <connect gate="-1" pin="1" pad="1"/>
 <connect gate="-2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B2B-XH-A" prefix="CON" uservalue="yes">
+<gates>
+<gate name="1" symbol="MPINV" x="0" y="0"/>
+<gate name="2" symbol="MPIN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="B2B-XH-A(LF)(SN)">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="2" pin="1" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
