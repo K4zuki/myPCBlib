@@ -60603,7 +60603,10 @@ Regulator with Enable</description>
 <connect gate="G$1" pin="VSS" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="568-13663-1-ND"/>
+<attribute name="MOUSER" value="771-PCA9670PW118"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -60635,10 +60638,7 @@ Regulator with Enable</description>
 <connect gate="G$1" pin="O8" pad="11"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="AKIZUKI" value="I-10669" constant="no"/>
-<attribute name="DIGIKEY" value="TBD62083APG-ND" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="FG" package="IC-18-1.27-300MIL">
@@ -60663,10 +60663,7 @@ Regulator with Enable</description>
 <connect gate="G$1" pin="O8" pad="11"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="AKIZUKI" value="I-11081" constant="no"/>
-<attribute name="DIGIKEY" value="TBD62083AFGELCT-ND" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="FNG" package="SOT65P640X440-18N">
