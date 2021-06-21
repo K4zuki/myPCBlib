@@ -52379,8 +52379,9 @@ Source: http://www.3M.com/ehpd</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AKIZUKI" value="I-10637" constant="no"/>
-<attribute name="DIGIKEY" value="TBD62083AFNGELCT-ND" constant="no"/>
+<attribute name="AKIZUKI" value="I-10637"/>
+<attribute name="DIGIKEY" value="TBD62083AFNGELCT-ND"/>
+<attribute name="MOUSER" value="757-TBD62083AFNGEL "/>
 </technology>
 </technologies>
 </device>
@@ -60603,6 +60604,97 @@ Regulator with Enable</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TBD62183A" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="IC-TR-ARRAY-8P-POSIN-SINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PG" package="IC-SOCKET-DIL-18">
+<connects>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="I1" pad="1"/>
+<connect gate="G$1" pin="I2" pad="2"/>
+<connect gate="G$1" pin="I3" pad="3"/>
+<connect gate="G$1" pin="I4" pad="4"/>
+<connect gate="G$1" pin="I5" pad="5"/>
+<connect gate="G$1" pin="I6" pad="6"/>
+<connect gate="G$1" pin="I7" pad="7"/>
+<connect gate="G$1" pin="I8" pad="8"/>
+<connect gate="G$1" pin="O1" pad="18"/>
+<connect gate="G$1" pin="O2" pad="17"/>
+<connect gate="G$1" pin="O3" pad="16"/>
+<connect gate="G$1" pin="O4" pad="15"/>
+<connect gate="G$1" pin="O5" pad="14"/>
+<connect gate="G$1" pin="O6" pad="13"/>
+<connect gate="G$1" pin="O7" pad="12"/>
+<connect gate="G$1" pin="O8" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="I-10669" constant="no"/>
+<attribute name="DIGIKEY" value="TBD62083APG-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="FG" package="IC-18-1.27-300MIL">
+<connects>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="I1" pad="1"/>
+<connect gate="G$1" pin="I2" pad="2"/>
+<connect gate="G$1" pin="I3" pad="3"/>
+<connect gate="G$1" pin="I4" pad="4"/>
+<connect gate="G$1" pin="I5" pad="5"/>
+<connect gate="G$1" pin="I6" pad="6"/>
+<connect gate="G$1" pin="I7" pad="7"/>
+<connect gate="G$1" pin="I8" pad="8"/>
+<connect gate="G$1" pin="O1" pad="18"/>
+<connect gate="G$1" pin="O2" pad="17"/>
+<connect gate="G$1" pin="O3" pad="16"/>
+<connect gate="G$1" pin="O4" pad="15"/>
+<connect gate="G$1" pin="O5" pad="14"/>
+<connect gate="G$1" pin="O6" pad="13"/>
+<connect gate="G$1" pin="O7" pad="12"/>
+<connect gate="G$1" pin="O8" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="I-11081" constant="no"/>
+<attribute name="DIGIKEY" value="TBD62083AFGELCT-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="FNG" package="SOT65P640X440-18N">
+<connects>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="I1" pad="1"/>
+<connect gate="G$1" pin="I2" pad="2"/>
+<connect gate="G$1" pin="I3" pad="3"/>
+<connect gate="G$1" pin="I4" pad="4"/>
+<connect gate="G$1" pin="I5" pad="5"/>
+<connect gate="G$1" pin="I6" pad="6"/>
+<connect gate="G$1" pin="I7" pad="7"/>
+<connect gate="G$1" pin="I8" pad="8"/>
+<connect gate="G$1" pin="O1" pad="18"/>
+<connect gate="G$1" pin="O2" pad="17"/>
+<connect gate="G$1" pin="O3" pad="16"/>
+<connect gate="G$1" pin="O4" pad="15"/>
+<connect gate="G$1" pin="O5" pad="14"/>
+<connect gate="G$1" pin="O6" pad="13"/>
+<connect gate="G$1" pin="O7" pad="12"/>
+<connect gate="G$1" pin="O8" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="TBD62183AFNGELCT-ND"/>
+<attribute name="MOUSER" value="757-TBD62183AFNGEL"/>
+</technology>
 </technologies>
 </device>
 </devices>
